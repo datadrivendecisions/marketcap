@@ -333,7 +333,7 @@
         "name": "Linde",
         "marketcap": 217870286848,
         "country": "United Kingdom",
-        "sector": "Chemicals"
+        "sector": "Other"
     },
     {
         "name": "Pinduoduo",
@@ -423,7 +423,7 @@
         "name": "Philip Morris",
         "marketcap": 183248732160,
         "country": "United States",
-        "sector": "Tobacco"
+        "sector": "Other"
     },
     {
         "name": "Intuit",
@@ -489,7 +489,7 @@
         "name": "Caterpillar",
         "marketcap": 166416990208,
         "country": "United States",
-        "sector": "Machinery"
+        "sector": "Other"
     },
     {
         "name": "Morgan Stanley",
@@ -507,7 +507,7 @@
         "name": "Nextera Energy",
         "marketcap": 161191231488,
         "country": "United States",
-        "sector": "Utilities"
+        "sector": "Other"
     },
     {
         "name": "Pfizer",
@@ -591,13 +591,13 @@
         "name": "Uber",
         "marketcap": 151540793344,
         "country": "United States",
-        "sector": "Transportation"
+        "sector": "Other"
     },
     {
         "name": "Union Pacific Corporation",
         "marketcap": 149259599872,
         "country": "United States",
-        "sector": "Transportation"
+        "sector": "Other"
     }
 ]
 

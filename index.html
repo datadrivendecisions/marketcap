@@ -36,7 +36,7 @@
       Retail: "#FF6347", // Tomato (lighter than Orange Red)
       Automotive: "#FF69B4", // Hot Pink (keeping it as it contrasts well)
       Conglomerate: "#FF82AB", // Light Hot Pink
-      "Health Care": "#9370DB", // Medium Purple (lighter than Blue Violet)
+      "Health Care": "#bb7afa", // Medium Purple (lighter than Blue Violet)
       Banking: "#7FFF00", // Chartreuse (lighter than Spring Green)
       "Financial Services": "#9ACD32", // Yellow Green (lighter than Medium Slate Blue)
       "Food & Drink": "#FFB6C1", // Light Pink
@@ -47,7 +47,7 @@
       "Telecommunications Services": "#AFEEEE", // Pale Turquoise
       Media: "#FFDAB9", // Peach Puff (lighter than Dark Orange)
       "Aerospace & Defense": "#FFA07A", // Light Salmon (lighter than Orange Red)
-      Other: "#DDA0DD" // Plum (lighter than Medium Orchid)
+      Other: "#fffcc7" // Cream
     };
 
 
@@ -61,8 +61,8 @@
       const continents = {
         "North America": { angle: 0 },
         Europe: { angle: 90 },
-        Asia: { angle: 180 },
-        Oceania: { angle: 270 },
+        Asia: { angle: 170 },
+        Oceania: { angle: 280 },
         "South America": { angle: 135 },
         Africa: { angle: 225 },
       };
@@ -70,7 +70,7 @@
       // Convert angles to x and y coordinates
       const radiusScale = {
         "North America": 400,
-        Europe: 350,
+        Europe: 380,
         Asia: 350,
         Oceania: 300,
         "South America": 325,
@@ -131,6 +131,7 @@
       };
 
       // Load data from the JSON file
+      // Load data from the JSON file
       d3.json("top_100_companies_2020.json").then((data) => {
         const width = 1500;
         const height = 1000;
@@ -173,28 +174,65 @@
         nodes
           .append("text")
           .attr("dy", ".3em")
+          .attr("text-anchor", "middle") // Keep text centered in the bubble
           .text((d) => d.data.name)
           .style("font-size", (d) => `${Math.max(d.r / 4, 10)}px`);
 
-        // Add force layout for stronger separation
+        // Adjust force simulation to group sectors per region closer together
         d3.forceSimulation(root.children)
           .force(
             "x",
-            d3
-              .forceX(
-                (d) =>
-                  continents[countryToContinent[d.data.country] || "Other"].x
-              )
-              .strength(0.2)
+            d3.forceX((d) => {
+              const continent = countryToContinent[d.data.country] || "Other";
+              const baseX = continents[continent].x;
+              // Add a small offset based on the sector to group them closer
+              const sectorOffset = {
+                Technology: -100,
+                Retail: 0,
+                Automotive: 100,
+                Conglomerate: -50,
+                "Health Care": 50,
+                Banking: -100,
+                "Financial Services": 0,
+                "Food & Drink": 100,
+                "Household & Personal Products": -50,
+                "Oil & Gas Operations": 50,
+                Semiconductors: -100,
+                "Luxury Goods": 0,
+                "Telecommunications Services": 100,
+                Media: -50,
+                "Aerospace & Defense": 50,
+                Other: 0,
+              };
+              return baseX + (sectorOffset[d.data.sector] || 0);
+            }).strength(0.3)
           )
           .force(
             "y",
-            d3
-              .forceY(
-                (d) =>
-                  continents[countryToContinent[d.data.country] || "Other"].y
-              )
-              .strength(0.2)
+            d3.forceY((d) => {
+              const continent = countryToContinent[d.data.country] || "Other";
+              const baseY = continents[continent].y;
+              // Add a small offset based on the sector to group them closer
+              const sectorOffset = {
+                Technology: -50,
+                Retail: 0,
+                Automotive: 50,
+                Conglomerate: -100,
+                "Health Care": 100,
+                Banking: -50,
+                "Financial Services": 0,
+                "Food & Drink": 50,
+                "Household & Personal Products": -100,
+                "Oil & Gas Operations": 100,
+                Semiconductors: -50,
+                "Luxury Goods": 0,
+                "Telecommunications Services": 50,
+                Media: -100,
+                "Aerospace & Defense": 100,
+                Other: 0,
+              };
+              return baseY + (sectorOffset[d.data.sector] || 0);
+            }).strength(0.3)
           )
           .force("collide", d3.forceCollide((d) => d.r + 2).strength(1))
           .on("tick", () => {
