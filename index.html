@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Largest Companies in the World - 2020</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <style>
+      .bubble {
+        stroke: #fff;
+        stroke-width: 1.5px;
+      }
+
+      text {
+        font-family: sans-serif;
+        text-anchor: middle;
+        fill: black;
+      }
+
+      .legend {
+        font-family: sans-serif;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="chart"></div>
+
+    <script>
+    // Define a color scale for different sectors
+    const sectorColors = {
+      Technology: "#FFD700", // Bright Gold
+      Retail: "#FF4500", // Orange Red
+      Automotive: "#FF1493", // Deep Pink
+      Conglomerate: "#FF69B4", // Hot Pink
+      "Health Care": "#8A2BE2", // Blue Violet
+      Banking: "#00FF7F", // Spring Green
+      "Financial Services": "#7B68EE", // Medium Slate Blue
+      "Food & Drink": "#FF7F50", // Coral
+      "Household & Personal Products": "#ADFF2F", // Green Yellow
+      "Oil & Gas Operations": "#32CD32", // Lime Green
+      Semiconductors: "#00BFFF", // Deep Sky Blue
+      "Luxury Goods": "#FF6347", // Tomato
+      "Telecommunications Services": "#40E0D0", // Turquoise
+      Media: "#FF8C00", // Dark Orange
+      "Aerospace & Defense": "#FF4500", // Orange Red
+      Other: "#BA55D3" // Medium Orchid
+    };
+
+
+      // Center of the circle
+      const centerX = 600;
+      const centerY = 400;
+      const radius = 350; // Increased radius for more separation
+
+      // Define continents and their positions based on a circular layout
+      const continents = {
+        "North America": { angle: 0 },
+        Europe: { angle: 90 },
+        Asia: { angle: 180 },
+        Oceania: { angle: 270 },
+        "South America": { angle: 135 },
+        Africa: { angle: 225 },
+      };
+
+      // Convert angles to x and y coordinates
+      const radiusScale = {
+        "North America": 400,
+        Europe: 350,
+        Asia: 350,
+        Oceania: 300,
+        "South America": 325,
+        Africa: 325,
+      };
+
+      for (const continent in continents) {
+        const angleRad = (continents[continent].angle * Math.PI) / 180;
+        const r = radiusScale[continent] || radius; // Adjust based on continent
+        continents[continent].x = centerX + r * Math.cos(angleRad);
+        continents[continent].y = centerY + r * Math.sin(angleRad);
+      }
+
+      // Define a mapping of countries to continents
+      const countryToContinent = {
+        "United States": "North America",
+        Canada: "North America",
+        Mexico: "North America",
+        Brazil: "South America",
+        Argentina: "South America",
+        China: "Asia",
+        Japan: "Asia",
+        "South Korea": "Asia",
+        India: "Asia",
+        Taiwan: "Asia",
+        "Hong Kong": "Asia",
+        Singapore: "Asia",
+        Malaysia: "Asia",
+        Thailand: "Asia",
+        Indonesia: "Asia",
+        "Saudi Arabia": "Asia",
+        "United Arab Emirates": "Asia",
+        Israel: "Asia",
+        Russia: "Europe",
+        Turkey: "Europe",
+        Switzerland: "Europe",
+        Germany: "Europe",
+        "United Kingdom": "Europe",
+        France: "Europe",
+        Netherlands: "Europe",
+        Spain: "Europe",
+        Italy: "Europe",
+        Sweden: "Europe",
+        Norway: "Europe",
+        Denmark: "Europe",
+        Finland: "Europe",
+        Belgium: "Europe",
+        Austria: "Europe",
+        Ireland: "Europe",
+        Poland: "Europe",
+        Portugal: "Europe",
+        Australia: "Oceania",
+        "New Zealand": "Oceania",
+        "South Africa": "Africa",
+        Egypt: "Africa",
+        Nigeria: "Africa",
+        Kenya: "Africa",
+      };
+
+      // Load data from the JSON file
+      d3.json("top_100_companies_2020.json").then((data) => {
+        const width = 1500;
+        const height = 1000;
+
+        const svg = d3
+          .select("#chart")
+          .append("svg")
+          .attr("width", width)
+          .attr("height", height);
+
+        // Define a pack layout with bubbles
+        const bubble = d3.pack().size([width, height]).padding(15);
+
+        // Convert the data to a hierarchy and sum the market cap for the packing layout
+        const root = d3.hierarchy({ children: data }).sum((d) => d.marketcap);
+
+        // Apply the pack layout to the data
+        bubble(root);
+
+        const nodes = svg
+          .selectAll("g")
+          .data(root.children)
+          .enter()
+          .append("g")
+          .attr("transform", (d) => {
+            const continent = countryToContinent[d.data.country] || "Other";
+            const { x, y } = continents[continent] || {
+              x: width / 2,
+              y: height / 2,
+            };
+            return `translate(${d.x + x - width / 2},${d.y + y - height / 2})`;
+          });
+
+        nodes
+          .append("circle")
+          .attr("class", "bubble")
+          .attr("r", (d) => d.r)
+          .style("fill", (d) => sectorColors[d.data.sector] || "#ccc");
+
+        nodes
+          .append("text")
+          .attr("dy", ".3em")
+          .text((d) => d.data.name)
+          .style("font-size", (d) => `${Math.max(d.r / 4, 10)}px`);
+
+        // Add force layout for stronger separation
+        d3.forceSimulation(root.children)
+          .force(
+            "x",
+            d3
+              .forceX(
+                (d) =>
+                  continents[countryToContinent[d.data.country] || "Other"].x
+              )
+              .strength(0.2)
+          )
+          .force(
+            "y",
+            d3
+              .forceY(
+                (d) =>
+                  continents[countryToContinent[d.data.country] || "Other"].y
+              )
+              .strength(0.2)
+          )
+          .force("collide", d3.forceCollide((d) => d.r + 2).strength(1))
+          .on("tick", () => {
+            nodes.attr("transform", (d) => `translate(${d.x},${d.y})`);
+          });
+
+        // Add legend
+        const legendX = 50; // X position of the first column of the legend
+        const legendY = 20; // Y position of the legend
+        const itemSpacingX = 300; // Horizontal spacing between columns
+        const itemSpacingY = 30; // Vertical spacing between rows
+
+        // Define the legend
+        const legend = svg
+          .selectAll(".legend")
+          .data(Object.keys(sectorColors))
+          .enter()
+          .append("g")
+          .attr("class", "legend")
+          .attr("transform", (d, i) => {
+            const x = legendX + (i % 2) * itemSpacingX; // Determine column (0 or 1)
+            const y = legendY + Math.floor(i / 2) * itemSpacingY; // Determine row
+            return `translate(${x}, ${y})`;
+          });
+
+        // Add colored circles to the legend
+        legend
+          .append("circle")
+          .attr("cx", 0)
+          .attr("cy", 10) // Centered vertically with the text
+          .attr("r", 10)
+          .style("fill", (d) => sectorColors[d])
+          .style("stroke", "#333")
+          .style("stroke-width", "1px");
+
+        // Add labels to the legend
+        legend
+          .append("text")
+          .attr("x", 20) // Position the text 20px to the right of the circle
+          .attr("y", 14) // Align the text with the circle
+          .style("font-size", "14px")
+          .style("font-weight", "bold")
+          .style("text-anchor", "start") // Align text to the left
+          .text((d) => d);
+
+        // Interactive legend (optional)
+        legend
+          .on("mouseover", function (event, d) {
+            nodes
+              .selectAll("circle")
+              .style("opacity", (n) => (n.data.sector === d ? 1 : 0.1));
+          })
+          .on("mouseout", function () {
+            nodes.selectAll("circle").style("opacity", 1);
+          });
+      });
+    </script>
+  </body>
+</html>
