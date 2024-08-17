@@ -1,0 +1,1 @@
+![Largest Market Cap 2020](largest-companies-in-the-world-2020-9231.jpg)
