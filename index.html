@@ -132,7 +132,7 @@
 
       // Load data from the JSON file
       // Load data from the JSON file
-      d3.json("top_100_companies_2020.json").then((data) => {
+      d3.json("top_100_companies_with_symbols.json").then((data) => {
         const width = 1500;
         const height = 1000;
 
@@ -171,12 +171,25 @@
           .attr("r", (d) => d.r)
           .style("fill", (d) => sectorColors[d.data.sector] || "#ccc");
 
+        // Append the company logo to each node
+        nodes
+          .append("image")
+          .attr("xlink:href", (d) => `logos/${d.data.symbol}.webp`) // Assuming each logo file is named after the company's stock symbol (e.g., AAPL.webp)
+          .attr("width", (d) => `${d.r * 1.2}px`) // Scale the image based on the bubble size
+          .attr("height", (d) => `${d.r * 1.2}px`)
+          .attr("x", (d) => `-${d.r * 0.6}px`) // Center the image horizontally
+          .attr("y", (d) => `-${d.r * 0.6}px`) // Center the image vertically
+          .append("title") // Add a title element to the image
+          .text((d) => d.data.name); // Set the text to the company name
+
+        // Append market cap text below the logo
         nodes
           .append("text")
-          .attr("dy", ".3em")
-          .attr("text-anchor", "middle") // Keep text centered in the bubble
-          .text((d) => d.data.name)
-          .style("font-size", (d) => `${Math.max(d.r / 4, 10)}px`);
+          .attr("dy", (d) => `${d.r * 0.9}px`) // Position text just below the logo
+          .attr("text-anchor", "middle")
+          .style("font-size", "12px")
+          .style("font-weight", "bold")
+          .text((d) => `$${(d.data.marketcap / 1e9).toFixed(0)}B`);
 
         // Adjust force simulation to group sectors per region closer together
         d3.forceSimulation(root.children)
