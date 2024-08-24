@@ -1,0 +1,802 @@
+[
+    {
+        "name": "General Electric",
+        "symbol": "GE",
+        "marketcap": 330000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Conglomerate"
+    },
+    {
+        "name": "Microsoft",
+        "symbol": "MSFT",
+        "marketcap": 299000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Technology"
+    },
+    {
+        "name": "Exxon Mobil",
+        "symbol": "XOM",
+        "marketcap": 292000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Oil & Gas Operations"
+    },
+    {
+        "name": "Pfizer",
+        "symbol": "PFE",
+        "marketcap": 269000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Health Care"
+    },
+    {
+        "name": "Citigroup",
+        "symbol": "C",
+        "marketcap": 243000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Financial Services"
+    },
+    {
+        "name": "Wal-Mart Stores",
+        "symbol": "WMT",
+        "marketcap": 238000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Retail"
+    },
+    {
+        "name": "BP",
+        "symbol": "BP",
+        "marketcap": 199000,
+        "country": "United Kingdom",
+        "region": "Europe",
+        "sector": "Oil & Gas Operations"
+    },
+    {
+        "name": "American Intnl Group",
+        "symbol": "AIG",
+        "marketcap": 188000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Financial Services"
+    },
+    {
+        "name": "Intel",
+        "symbol": "INTC",
+        "marketcap": 178000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Semiconductors"
+    },
+    {
+        "name": "Bank of America",
+        "symbol": "BAC",
+        "marketcap": 170000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Financial Services"
+    },
+    {
+        "name": "Johnson & Johnson",
+        "symbol": "JNJ",
+        "marketcap": 164000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Health Care"
+    },
+    {
+        "name": "HSBC Holdings",
+        "symbol": "HBC",
+        "marketcap": 163000,
+        "country": "United Kingdom",
+        "region": "Europe",
+        "sector": "Financial Services"
+    },
+    {
+        "name": "Vodafone Group",
+        "symbol": "VOD",
+        "marketcap": 160000,
+        "country": "United Kingdom",
+        "region": "Europe",
+        "sector": "Telecommunications Services"
+    },
+    {
+        "name": "Cisco Systems",
+        "symbol": "CSCO",
+        "marketcap": 157000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Technology"
+    },
+    {
+        "name": "IBM",
+        "symbol": "IBM",
+        "marketcap": 152000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Technology"
+    },
+    {
+        "name": "Procter & Gamble",
+        "symbol": "PG",
+        "marketcap": 141000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Household & Personal Products"
+    },
+    {
+        "name": "Berkshire Hathaway",
+        "symbol": "BRKA",
+        "marketcap": 135000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Financial Services"
+    },
+    {
+        "name": "Toyota Motor",
+        "symbol": "TM",
+        "marketcap": 130000,
+        "country": "Japan",
+        "region": "Asia",
+        "sector": "Automotive"
+    },
+    {
+        "name": "GlaxoSmithKline",
+        "symbol": "GSK",
+        "marketcap": 126000,
+        "country": "United Kingdom",
+        "region": "Europe",
+        "sector": "Health Care"
+    },
+    {
+        "name": "Coca-Cola Co (Coke)",
+        "symbol": "KO",
+        "marketcap": 124000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Food & Drink"
+    },
+    {
+        "name": "Total",
+        "symbol": "TOT",
+        "marketcap": 120000,
+        "country": "France",
+        "region": "Europe",
+        "sector": "Oil & Gas Operations"
+    },
+    {
+        "name": "Novartis",
+        "symbol": "NVS",
+        "marketcap": 112000,
+        "country": "Switzerland",
+        "region": "Europe",
+        "sector": "Health Care"
+    },
+    {
+        "name": "Merck",
+        "symbol": "MRK",
+        "marketcap": 107000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Health Care"
+    },
+    {
+        "name": "Royal Dutch",
+        "symbol": "RD",
+        "marketcap": 105000,
+        "country": "Netherlands",
+        "region": "Europe",
+        "sector": "Oil & Gas Operations"
+    },
+    {
+        "name": "Verizon Comm",
+        "symbol": "VZ",
+        "marketcap": 99000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Telecommunications Services"
+    },
+    {
+        "name": "ChevronTexaco",
+        "symbol": "CVX",
+        "marketcap": 99000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Oil & Gas Operations"
+    },
+    {
+        "name": "Wells Fargo",
+        "symbol": "WFC",
+        "marketcap": 98000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Financial Services"
+    },
+    {
+        "name": "Altria Group",
+        "symbol": "MO",
+        "marketcap": 97000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Food & Drink"
+    },
+    {
+        "name": "Pepsico",
+        "symbol": "PEP",
+        "marketcap": 93000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Food & Drink"
+    },
+    {
+        "name": "Telecom Italia",
+        "symbol": "TI",
+        "marketcap": 90000,
+        "country": "Italy",
+        "region": "Europe",
+        "sector": "Telecommunications Services"
+    },
+    {
+        "name": "NTT DoCoMo",
+        "symbol": "DCM",
+        "marketcap": 88000,
+        "country": "Japan",
+        "region": "Asia",
+        "sector": "Telecommunications Services"
+    },
+    {
+        "name": "Dell",
+        "symbol": "DELL",
+        "marketcap": 87000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Technology"
+    },
+    {
+        "name": "Roche Holding",
+        "symbol": "RHHBY.PK",
+        "marketcap": 84000,
+        "country": "Switzerland",
+        "region": "Europe",
+        "sector": "Health Care"
+    },
+    {
+        "name": "Eli Lilly",
+        "symbol": "LLY",
+        "marketcap": 83000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Health Care"
+    },
+    {
+        "name": "UPS",
+        "symbol": "UPS",
+        "marketcap": 82000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Other"
+    },
+    {
+        "name": "SBC Comm",
+        "symbol": "SBC",
+        "marketcap": 81000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Telecommunications Services"
+    },
+    {
+        "name": "ENI",
+        "symbol": "E",
+        "marketcap": 81000,
+        "country": "Italy",
+        "region": "Europe",
+        "sector": "Oil & Gas Operations"
+    },
+    {
+        "name": "Time Warner",
+        "symbol": "TWX",
+        "marketcap": 80000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Media"
+    },
+    {
+        "name": "AstraZeneca",
+        "symbol": "AZN",
+        "marketcap": 80000,
+        "country": "United Kingdom",
+        "region": "Europe",
+        "sector": "Health Care"
+    },
+    {
+        "name": "NTT",
+        "symbol": "NTT",
+        "marketcap": 79000,
+        "country": "Japan",
+        "region": "Asia",
+        "sector": "Telecommunications Services"
+    },
+    {
+        "name": "PetroChina",
+        "symbol": "PTR",
+        "marketcap": 79000,
+        "country": "China",
+        "region": "Asia",
+        "sector": "Oil & Gas Operations"
+    },
+    {
+        "name": "Home Depot",
+        "symbol": "HD",
+        "marketcap": 79000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Retail"
+    },
+    {
+        "name": "JP Morgan Chase",
+        "symbol": "JPM",
+        "marketcap": 77000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Financial Services"
+    },
+    {
+        "name": "Shell",
+        "symbol": "SC",
+        "marketcap": 72000,
+        "country": "United Kingdom",
+        "region": "Europe",
+        "sector": "Oil & Gas Operations"
+    },
+    {
+        "name": "Deutsche Telekom",
+        "symbol": "DT",
+        "marketcap": 72000,
+        "country": "Germany",
+        "region": "Europe",
+        "sector": "Telecommunications Services"
+    },
+    {
+        "name": "Fannie Mae",
+        "symbol": "FNM",
+        "marketcap": 68000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Financial Services"
+    },
+    {
+        "name": "Amgen",
+        "symbol": "AMGN",
+        "marketcap": 68000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Health Care"
+    },
+    {
+        "name": "Abbott Laboratories",
+        "symbol": "ABT",
+        "marketcap": 67000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Health Care"
+    },
+    {
+        "name": "3M",
+        "symbol": "MMM",
+        "marketcap": 67000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Other"
+    },
+    {
+        "name": "Comcast",
+        "symbol": "CMCSA",
+        "marketcap": 66000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Media"
+    },
+    {
+        "name": "American Express",
+        "symbol": "AXP",
+        "marketcap": 65000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Financial Services"
+    },
+    {
+        "name": "Nokia",
+        "symbol": "NOK",
+        "marketcap": 64000,
+        "country": "Finland",
+        "region": "Europe",
+        "sector": "Technology"
+    },
+    {
+        "name": "Hewlett-Packard",
+        "symbol": "HPQ",
+        "marketcap": 64000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Technology"
+    },
+    {
+        "name": "Viacom",
+        "symbol": "VIAB",
+        "marketcap": 63000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Media"
+    },
+    {
+        "name": "Tyco Intnl",
+        "symbol": "TYC",
+        "marketcap": 63000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Conglomerate"
+    },
+    {
+        "name": "Siemens",
+        "symbol": "SI",
+        "marketcap": 61000,
+        "country": "Germany",
+        "region": "Europe",
+        "sector": "Conglomerate"
+    },
+    {
+        "name": "Wachovia Corp",
+        "symbol": "WB",
+        "marketcap": 61000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Financial Services"
+    },
+    {
+        "name": "Aventis",
+        "symbol": "AVE",
+        "marketcap": 60000,
+        "country": "France",
+        "region": "Europe",
+        "sector": "Health Care"
+    },
+    {
+        "name": "Medtronic",
+        "symbol": "MDT",
+        "marketcap": 59000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Health Care"
+    },
+    {
+        "name": "Barclays",
+        "symbol": "BCS",
+        "marketcap": 59000,
+        "country": "United Kingdom",
+        "region": "Europe",
+        "sector": "Financial Services"
+    },
+    {
+        "name": "France Telecom",
+        "symbol": "FTE",
+        "marketcap": 58000,
+        "country": "France",
+        "region": "Europe",
+        "sector": "Telecommunications Services"
+    },
+    {
+        "name": "Oracle",
+        "symbol": "ORCL",
+        "marketcap": 57000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Technology"
+    },
+    {
+        "name": "Genentech",
+        "symbol": "DNA",
+        "marketcap": 57000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Health Care"
+    },
+    {
+        "name": "China Mobile (HK)",
+        "symbol": "CHL",
+        "marketcap": 57000,
+        "country": "China",
+        "region": "Asia",
+        "sector": "Telecommunications Services"
+    },
+    {
+        "name": "eBay",
+        "symbol": "EBAY",
+        "marketcap": 57000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Retail"
+    },
+    {
+        "name": "Mitsubishi Tokyo Financial Group",
+        "symbol": "MTF",
+        "marketcap": 55000,
+        "country": "Japan",
+        "region": "Asia",
+        "sector": "Financial Services"
+    },
+    {
+        "name": "Qualcomm",
+        "symbol": "QCOM",
+        "marketcap": 55000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Semiconductors"
+    },
+    {
+        "name": "Bank One",
+        "symbol": "ONE",
+        "marketcap": 55000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Financial Services"
+    },
+    {
+        "name": "Oao Gazprom",
+        "symbol": "OGZPF.PK",
+        "marketcap": 54000,
+        "country": "Russia",
+        "region": "Europe",
+        "sector": "Oil & Gas Operations"
+    },
+    {
+        "name": "News Corporation",
+        "symbol": "NWS",
+        "marketcap": 53000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Media"
+    },
+    {
+        "name": "Kraft Foods",
+        "symbol": "KFT",
+        "marketcap": 53000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Food & Drink"
+    },
+    {
+        "name": "US Bancorp",
+        "symbol": "USB",
+        "marketcap": 52000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Financial Services"
+    },
+    {
+        "name": "BHP Billiton",
+        "symbol": "BHP",
+        "marketcap": 52000,
+        "country": "Australia",
+        "region": "Oceania",
+        "sector": "Other"
+    },
+    {
+        "name": "ConocoPhillips",
+        "symbol": "COP",
+        "marketcap": 52000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Oil & Gas Operations"
+    },
+    {
+        "name": "Banco Santander",
+        "symbol": "STD",
+        "marketcap": 51000,
+        "country": "Spain",
+        "region": "Europe",
+        "sector": "Financial Services"
+    },
+    {
+        "name": "Walt Disney",
+        "symbol": "DIS",
+        "marketcap": 51000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Media"
+    },
+    {
+        "name": "SAP",
+        "symbol": "SAP",
+        "marketcap": 50000,
+        "country": "Germany",
+        "region": "Europe",
+        "sector": "Technology"
+    },
+    {
+        "name": "Bristol-Myers Squibb",
+        "symbol": "BMY",
+        "marketcap": 49000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Health Care"
+    },
+    {
+        "name": "Unilever",
+        "symbol": "UL",
+        "marketcap": 49000,
+        "country": "United Kingdom",
+        "region": "Europe",
+        "sector": "Food & Drink"
+    },
+    {
+        "name": "Wyeth",
+        "symbol": "WYE",
+        "marketcap": 48000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Health Care"
+    },
+    {
+        "name": "ENEL",
+        "symbol": "EN",
+        "marketcap": 47000,
+        "country": "Italy",
+        "region": "Europe",
+        "sector": "Utilities"
+    },
+    {
+        "name": "BellSouth",
+        "symbol": "BLS",
+        "marketcap": 46000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Telecommunications Services"
+    },
+    {
+        "name": "Sanofi-Synthelabo",
+        "symbol": "SNY",
+        "marketcap": 46000,
+        "country": "France",
+        "region": "Europe",
+        "sector": "Health Care"
+    },
+    {
+        "name": "DaimlerChrysler",
+        "symbol": "DCX",
+        "marketcap": 46000,
+        "country": "Germany",
+        "region": "Europe",
+        "sector": "Automotive"
+    },
+    {
+        "name": "Lloyds TSB Group",
+        "symbol": "LYG",
+        "marketcap": 46000,
+        "country": "United Kingdom",
+        "region": "Europe",
+        "sector": "Financial Services"
+    },
+    {
+        "name": "Telefonica Moviles",
+        "symbol": "TEM",
+        "marketcap": 46000,
+        "country": "Spain",
+        "region": "Europe",
+        "sector": "Telecommunications Services"
+    },
+    {
+        "name": "United Technologies",
+        "symbol": "UTX",
+        "marketcap": 45000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Aerospace & Defense"
+    },
+    {
+        "name": "Banco Bilbao",
+        "symbol": "BBV",
+        "marketcap": 45000,
+        "country": "Spain",
+        "region": "Europe",
+        "sector": "Financial Services"
+    },
+    {
+        "name": "Canon",
+        "symbol": "CAJ",
+        "marketcap": 45000,
+        "country": "Japan",
+        "region": "Asia",
+        "sector": "Technology"
+    },
+    {
+        "name": "DuPont",
+        "symbol": "DD",
+        "marketcap": 43000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Other"
+    },
+    {
+        "name": "Ericsson",
+        "symbol": "ERICY",
+        "marketcap": 43000,
+        "country": "Sweden",
+        "region": "Europe",
+        "sector": "Telecommunications Services"
+    },
+    {
+        "name": "Honda Motor",
+        "symbol": "HMC",
+        "marketcap": 43000,
+        "country": "Japan",
+        "region": "Asia",
+        "sector": "Automotive"
+    },
+    {
+        "name": "Yahoo",
+        "symbol": "YHOO",
+        "marketcap": 43000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Technology"
+    },
+    {
+        "name": "E.ON",
+        "symbol": "EON",
+        "marketcap": 43000,
+        "country": "Germany",
+        "region": "Europe",
+        "sector": "Utilities"
+    },
+    {
+        "name": "Anheuser-Busch Companies",
+        "symbol": "BUD",
+        "marketcap": 43000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Food & Drink"
+    },
+    {
+        "name": "Gillette",
+        "symbol": "G",
+        "marketcap": 43000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Household & Personal Products"
+    },
+    {
+        "name": "Goldman Sachs",
+        "symbol": "GS",
+        "marketcap": 43000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Financial Services"
+    },
+    {
+        "name": "Freddie Mac",
+        "symbol": "FRE",
+        "marketcap": 42000,
+        "country": "United States",
+        "region": "North America",
+        "sector": "Financial Services"
+    },
+    {
+        "name": "Diageo",
+        "symbol": "DEO",
+        "marketcap": 42000,
+        "country": "United Kingdom",
+        "region": "Europe",
+        "sector": "Food & Drink"
+    },
+    {
+        "name": "Motorola",
+        "symbol": "MOT",
+        "marketcap": 42000,
+        "country": "United States",
+        "region": "United States",
+        "sector": "Technology"
+    }
+]
