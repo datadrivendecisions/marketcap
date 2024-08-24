@@ -87,7 +87,7 @@
         "name": "JPMorgan Chase",
         "marketcap": 608181354496,
         "country": "United States",
-        "sector": "Banking",
+        "sector": "Financial Services",
         "symbol": "JPM"
     },
     {
@@ -206,7 +206,7 @@
         "name": "Bank of America",
         "marketcap": 304990289920,
         "country": "United States",
-        "sector": "Banking",
+        "sector": "Financial Services",
         "symbol": "BAC"
     },
     {
@@ -234,7 +234,7 @@
         "name": "ICBC",
         "marketcap": 284693838516,
         "country": "China",
-        "sector": "Banking",
+        "sector": "Financial Services",
         "symbol": "1398.HK"
     },
     {
@@ -367,7 +367,7 @@
         "name": "Agricultural Bank of China",
         "marketcap": 226302889881,
         "country": "China",
-        "sector": "Banking",
+        "sector": "Financial Services",
         "symbol": "601288.SS"
     },
     {
@@ -472,14 +472,14 @@
         "name": "Wells Fargo",
         "marketcap": 188160409600,
         "country": "United States",
-        "sector": "Banking",
+        "sector": "Financial Services",
         "symbol": "WFC"
     },
     {
         "name": "China Construction Bank",
         "marketcap": 185954668721,
         "country": "China",
-        "sector": "Banking",
+        "sector": "Financial Services",
         "symbol": "601939.SS"
     },
     {
@@ -521,7 +521,7 @@
         "name": "Bank of China",
         "marketcap": 178819675445,
         "country": "China",
-        "sector": "Banking",
+        "sector": "Financial Services",
         "symbol": "601988.SS"
     },
     {
@@ -626,7 +626,7 @@
         "name": "Royal Bank Of Canada",
         "marketcap": 158179016704,
         "country": "Canada",
-        "sector": "Banking",
+        "sector": "Financial Services",
         "symbol": "RY"
     },
     {
@@ -640,7 +640,7 @@
         "name": "HSBC",
         "marketcap": 157374627840,
         "country": "United Kingdom",
-        "sector": "Banking",
+        "sector": "Financial Services",
         "symbol": "HSBC"
     },
     {
@@ -668,14 +668,14 @@
         "name": "Commonwealth Bank",
         "marketcap": 153174764007,
         "country": "Australia",
-        "sector": "Banking",
+        "sector": "Financial Services",
         "symbol": "CBA.AX"
     },
     {
         "name": "HDFC Bank",
         "marketcap": 152793776128,
         "country": "India",
-        "sector": "Banking",
+        "sector": "Financial Services",
         "symbol": "HDB"
     },
     {

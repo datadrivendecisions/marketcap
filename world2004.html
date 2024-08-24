@@ -31,7 +31,7 @@
     <div class="container-fluid m-5">
       <h1>Largest Companies in the World by Market Capitalization - 2024</h1>
       <div id="chart"></div>
-      <p style="text-align: center; font-size: 14px; color: #555; margin-top: 20px;">Source: <a href="https://companiesmarketcap.com/" target="_blank">https://companiesmarketcap.com/</a></p>
+      <p style="text-align: center; font-size: 14px; color: #555; margin-top: 20px;">Source: <a href="https://fortboise.org/top100/top100-20040620.html/" target="_blank">https://fortboise.org/top100/top100-20040620.html</a></p>
     </div>
     <script>
     // Define a color scale for different sectors
@@ -62,7 +62,7 @@
 
       // Define continents and their positions based on a circular layout
       const continents = {
-        "North America": { angle: 0 },
+        "North America": { angle: 10 },
         Europe: { angle: 90 },
         Asia: { angle: 170 },
         Oceania: { angle: 280 },
@@ -72,9 +72,9 @@
 
       // Convert angles to x and y coordinates
       const radiusScale = {
-        "North America": 400,
-        Europe: 380,
-        Asia: 350,
+        "North America": 700,
+        Europe: 600,
+        Asia: 360,
         Oceania: 300,
         "South America": 325,
         Africa: 325,
@@ -134,9 +134,9 @@
       };
 
       // Load data from the JSON file
-      d3.json("top_100_companies_with_symbols.json").then((data) => {
-        const width = 1500;
-        const height = 1000;
+      d3.json("top1002004.json").then((data) => {
+        const width = 1800;
+        const height = 1400;
 
         const svg = d3
           .select("#chart")
@@ -189,7 +189,7 @@
           .attr("text-anchor", "middle")
           .style("font-size", (d) => `${Math.max(d.r / 4, 8)}px`) // Scale font size with bubble size
           .style("font-weight", "lighter")
-          .text((d) => `$${(d.data.marketcap / 1e9).toFixed(0)}B`);
+          .text((d) => `$${(d.data.marketcap / 1e3).toFixed(0)}B`);
 
         // Adjust force simulation to group sectors per region closer together
         d3.forceSimulation(root.children)
