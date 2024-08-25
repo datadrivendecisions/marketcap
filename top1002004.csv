@@ -1,0 +1,101 @@
+name,symbol,marketcap,country,region,sector
+General Electric,GE,330000,United States,North America,Conglomerate
+Microsoft,MSFT,299000,United States,North America,Technology
+Exxon Mobil,XOM,292000,United States,North America,Oil & Gas Operations
+Pfizer,PFE,269000,United States,North America,Health Care
+Citigroup,C,243000,United States,North America,Financial Services
+Wal-Mart Stores,WMT,238000,United States,North America,Retail
+BP,BP,199000,United Kingdom,Europe,Oil & Gas Operations
+American Intnl Group,AIG,188000,United States,North America,Financial Services
+Intel,INTC,178000,United States,North America,Semiconductors
+Bank of America,BAC,170000,United States,North America,Financial Services
+Johnson & Johnson,JNJ,164000,United States,North America,Health Care
+HSBC Holdings,HBC,163000,United Kingdom,Europe,Financial Services
+Vodafone Group,VOD,160000,United Kingdom,Europe,Telecommunications Services
+Cisco Systems,CSCO,157000,United States,North America,Technology
+IBM,IBM,152000,United States,North America,Technology
+Procter & Gamble,PG,141000,United States,North America,Household & Personal Products
+Berkshire Hathaway,BRKA,135000,United States,North America,Financial Services
+Toyota Motor,TM,130000,Japan,Asia,Automotive
+GlaxoSmithKline,GSK,126000,United Kingdom,Europe,Health Care
+Coca-Cola Co (Coke),KO,124000,United States,North America,Food & Drink
+Total,TOT,120000,France,Europe,Oil & Gas Operations
+Novartis,NVS,112000,Switzerland,Europe,Health Care
+Merck,MRK,107000,United States,North America,Health Care
+Royal Dutch,RD,105000,Netherlands,Europe,Oil & Gas Operations
+Verizon Comm,VZ,99000,United States,North America,Telecommunications Services
+ChevronTexaco,CVX,99000,United States,North America,Oil & Gas Operations
+Wells Fargo,WFC,98000,United States,North America,Financial Services
+Altria Group,MO,97000,United States,North America,Food & Drink
+Pepsico,PEP,93000,United States,North America,Food & Drink
+Telecom Italia,TI,90000,Italy,Europe,Telecommunications Services
+NTT DoCoMo,DCM,88000,Japan,Asia,Telecommunications Services
+Dell,DELL,87000,United States,North America,Technology
+Roche Holding,RHHBY.PK,84000,Switzerland,Europe,Health Care
+Eli Lilly,LLY,83000,United States,North America,Health Care
+UPS,UPS,82000,United States,North America,Other
+SBC Comm,SBC,81000,United States,North America,Telecommunications Services
+ENI,E,81000,Italy,Europe,Oil & Gas Operations
+Time Warner,TWX,80000,United States,North America,Media
+AstraZeneca,AZN,80000,United Kingdom,Europe,Health Care
+NTT,NTT,79000,Japan,Asia,Telecommunications Services
+PetroChina,PTR,79000,China,Asia,Oil & Gas Operations
+Home Depot,HD,79000,United States,North America,Retail
+JP Morgan Chase,JPM,77000,United States,North America,Financial Services
+Shell,SC,72000,United Kingdom,Europe,Oil & Gas Operations
+Deutsche Telekom,DT,72000,Germany,Europe,Telecommunications Services
+Fannie Mae,FNM,68000,United States,North America,Financial Services
+Amgen,AMGN,68000,United States,North America,Health Care
+Abbott Laboratories,ABT,67000,United States,North America,Health Care
+3M,MMM,67000,United States,North America,Other
+Comcast,CMCSA,66000,United States,North America,Media
+American Express,AXP,65000,United States,North America,Financial Services
+Nokia,NOK,64000,Finland,Europe,Technology
+Hewlett-Packard,HPQ,64000,United States,North America,Technology
+Viacom,VIAB,63000,United States,North America,Media
+Tyco Intnl,TYC,63000,United States,North America,Conglomerate
+Siemens,SI,61000,Germany,Europe,Conglomerate
+Wachovia Corp,WB,61000,United States,North America,Financial Services
+Aventis,AVE,60000,France,Europe,Health Care
+Medtronic,MDT,59000,United States,North America,Health Care
+Barclays,BCS,59000,United Kingdom,Europe,Financial Services
+France Telecom,FTE,58000,France,Europe,Telecommunications Services
+Oracle,ORCL,57000,United States,North America,Technology
+Genentech,DNA,57000,United States,North America,Health Care
+China Mobile (HK),CHL,57000,China,Asia,Telecommunications Services
+eBay,EBAY,57000,United States,North America,Retail
+Mitsubishi Tokyo Financial Group,MTF,55000,Japan,Asia,Financial Services
+Qualcomm,QCOM,55000,United States,North America,Semiconductors
+Bank One,ONE,55000,United States,North America,Financial Services
+Oao Gazprom,OGZPF.PK,54000,Russia,Europe,Oil & Gas Operations
+News Corporation,NWS,53000,United States,North America,Media
+Kraft Foods,KFT,53000,United States,North America,Food & Drink
+US Bancorp,USB,52000,United States,North America,Financial Services
+BHP Billiton,BHP,52000,Australia,Oceania,Other
+ConocoPhillips,COP,52000,United States,North America,Oil & Gas Operations
+Banco Santander,STD,51000,Spain,Europe,Financial Services
+Walt Disney,DIS,51000,United States,North America,Media
+SAP,SAP,50000,Germany,Europe,Technology
+Bristol-Myers Squibb,BMY,49000,United States,North America,Health Care
+Unilever,UL,49000,United Kingdom,Europe,Food & Drink
+Wyeth,WYE,48000,United States,North America,Health Care
+ENEL,EN,47000,Italy,Europe,Utilities
+BellSouth,BLS,46000,United States,North America,Telecommunications Services
+Sanofi-Synthelabo,SNY,46000,France,Europe,Health Care
+DaimlerChrysler,DCX,46000,Germany,Europe,Automotive
+Lloyds TSB Group,LYG,46000,United Kingdom,Europe,Financial Services
+Telefonica Moviles,TEM,46000,Spain,Europe,Telecommunications Services
+United Technologies,UTX,45000,United States,North America,Aerospace & Defense
+Banco Bilbao,BBV,45000,Spain,Europe,Financial Services
+Canon,CAJ,45000,Japan,Asia,Technology
+DuPont,DD,43000,United States,North America,Other
+Ericsson,ERICY,43000,Sweden,Europe,Telecommunications Services
+Honda Motor,HMC,43000,Japan,Asia,Automotive
+Yahoo,YHOO,43000,United States,North America,Technology
+E.ON,EON,43000,Germany,Europe,Utilities
+Anheuser-Busch Companies,BUD,43000,United States,North America,Food & Drink
+Gillette,G,43000,United States,North America,Household & Personal Products
+Goldman Sachs,GS,43000,United States,North America,Financial Services
+Freddie Mac,FRE,42000,United States,North America,Financial Services
+Diageo,DEO,42000,United Kingdom,Europe,Food & Drink
+Motorola,MOT,42000,United States,United States,Technology
