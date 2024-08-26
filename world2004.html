@@ -33,7 +33,7 @@
       <h1>100 Largest Companies in the World</h1>
       <h2>by Market Capitalization - 2004</h2>
       <div id="chart"></div>
-      <button onclick="saveChartAsPng()" class="btn btn-primary">Save as PNG</button>
+      <button onclick="saveChartAsPng()" class="btn btn-outline-primary">Save as PNG</button>
       <p style="text-align: center; font-size: 14px; color: #555; margin-top: 20px;">Source: <a href="https://fortboise.org/top100/top100-20040620.html/" target="_blank">https://fortboise.org/top100/top100-20040620.html</a></p>
     </div>
     <script>
@@ -312,26 +312,6 @@
             nodes.selectAll("circle").style("opacity", 1);
           });
       });
-
-      function svgToCanvas(svgElement, width, height, callback) {
-        const canvas = document.createElement("canvas");
-        canvas.width = width;
-        canvas.height = height;
-        const ctx = canvas.getContext("2d");
-
-        const svgData = new XMLSerializer().serializeToString(svgElement);
-        const img = new Image();
-        const svgBlob = new Blob([svgData], { type: "image/svg+xml;charset=utf-8" });
-        const url = URL.createObjectURL(svgBlob);
-
-        img.onload = function() {
-          ctx.drawImage(img, 0, 0);
-          URL.revokeObjectURL(url);
-          callback(canvas);
-        };
-
-        img.src = url;
-      }
 
       // JavaScript function to save the SVG
       function saveChartAsPng() {

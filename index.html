@@ -33,7 +33,7 @@
       <h1>100 Largest Companies in the World</h1>
       <h2>by Market Capitalization - 2024</h2>
       <div id="chart"></div>
-      <button onclick="saveChartAsPng()" class="btn btn-primary">Save as PNG</button>
+      <button onclick="saveChartAsPng()" class="btn btn-outline-primary">Save as PNG</button>
       <p style="text-align: center; font-size: 14px; color: #555; margin-top: 20px;">Source: <a href="https://companiesmarketcap.com/" target="_blank">https://companiesmarketcap.com/</a></p>
     </div>
     <script>
@@ -314,6 +314,7 @@
             nodes.selectAll("circle").style("opacity", 1);
           });
       });
+      
       // JavaScript function to save the SVG
       function saveChartAsPng() {
         var svgElement = document.querySelector('svg'); // Select your SVG element
