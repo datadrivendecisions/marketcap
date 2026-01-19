@@ -1,0 +1,702 @@
+[
+    {
+        "name": "NVIDIA",
+        "marketcap": 4540000000000,
+        "country": "United States",
+        "sector": "Semiconductors",
+        "symbol": "NVDA"
+    },
+    {
+        "name": "Apple",
+        "marketcap": 4034000000000,
+        "country": "United States",
+        "sector": "Technology",
+        "symbol": "AAPL"
+    },
+    {
+        "name": "Alphabet",
+        "marketcap": 3788000000000,
+        "country": "United States",
+        "sector": "Technology",
+        "symbol": "GOOG"
+    },
+    {
+        "name": "Microsoft",
+        "marketcap": 3594000000000,
+        "country": "United States",
+        "sector": "Technology",
+        "symbol": "MSFT"
+    },
+    {
+        "name": "Amazon",
+        "marketcap": 2467000000000,
+        "country": "United States",
+        "sector": "Retail",
+        "symbol": "AMZN"
+    },
+    {
+        "name": "Meta",
+        "marketcap": 1663000000000,
+        "country": "United States",
+        "sector": "Technology",
+        "symbol": "META"
+    },
+    {
+        "name": "Broadcom",
+        "marketcap": 1640000000000,
+        "country": "United States",
+        "sector": "Semiconductors",
+        "symbol": "AVGO"
+    },
+    {
+        "name": "TSMC",
+        "marketcap": 1576000000000,
+        "country": "Taiwan",
+        "sector": "Semiconductors",
+        "symbol": "TSM"
+    },
+    {
+        "name": "Saudi Aramco",
+        "marketcap": 1536000000000,
+        "country": "Saudi Arabia",
+        "sector": "Oil & Gas Operations",
+        "symbol": "2222.SR"
+    },
+    {
+        "name": "Tesla",
+        "marketcap": 1495000000000,
+        "country": "United States",
+        "sector": "Automotive",
+        "symbol": "TSLA"
+    },
+    {
+        "name": "Berkshire Hathaway",
+        "marketcap": 1084000000000,
+        "country": "United States",
+        "sector": "Conglomerate",
+        "symbol": "BRK-B"
+    },
+    {
+        "name": "Eli Lilly",
+        "marketcap": 963400000000,
+        "country": "United States",
+        "sector": "Health Care",
+        "symbol": "LLY"
+    },
+    {
+        "name": "Walmart",
+        "marketcap": 888250000000,
+        "country": "United States",
+        "sector": "Retail",
+        "symbol": "WMT"
+    },
+    {
+        "name": "JPMorgan Chase",
+        "marketcap": 886020000000,
+        "country": "United States",
+        "sector": "Financial Services",
+        "symbol": "JPM"
+    },
+    {
+        "name": "Tencent",
+        "marketcap": 691760000000,
+        "country": "China",
+        "sector": "Technology",
+        "symbol": "TCEHY"
+    },
+    {
+        "name": "Visa",
+        "marketcap": 676830000000,
+        "country": "United States",
+        "sector": "Financial Services",
+        "symbol": "V"
+    },
+    {
+        "name": "Oracle",
+        "marketcap": 560000000000,
+        "country": "United States",
+        "sector": "Technology",
+        "symbol": "ORCL"
+    },
+    {
+        "name": "Samsung",
+        "marketcap": 555590000000,
+        "country": "South Korea",
+        "sector": "Semiconductors",
+        "symbol": "005930.KS"
+    },
+    {
+        "name": "Mastercard",
+        "marketcap": 516080000000,
+        "country": "United States",
+        "sector": "Financial Services",
+        "symbol": "MA"
+    },
+    {
+        "name": "Exxon Mobil",
+        "marketcap": 513030000000,
+        "country": "United States",
+        "sector": "Oil & Gas Operations",
+        "symbol": "XOM"
+    },
+    {
+        "name": "Johnson & Johnson",
+        "marketcap": 498600000000,
+        "country": "United States",
+        "sector": "Health Care",
+        "symbol": "JNJ"
+    },
+    {
+        "name": "Palantir",
+        "marketcap": 423650000000,
+        "country": "United States",
+        "sector": "Technology",
+        "symbol": "PLTR"
+    },
+    {
+        "name": "ASML",
+        "marketcap": 415260000000,
+        "country": "Netherlands",
+        "sector": "Semiconductors",
+        "symbol": "ASML"
+    },
+    {
+        "name": "Bank of America",
+        "marketcap": 407380000000,
+        "country": "United States",
+        "sector": "Financial Services",
+        "symbol": "BAC"
+    },
+    {
+        "name": "AbbVie",
+        "marketcap": 403820000000,
+        "country": "United States",
+        "sector": "Health Care",
+        "symbol": "ABBV"
+    },
+    {
+        "name": "Netflix",
+        "marketcap": 397290000000,
+        "country": "United States",
+        "sector": "Media",
+        "symbol": "NFLX"
+    },
+    {
+        "name": "Agricultural Bank of China",
+        "marketcap": 384380000000,
+        "country": "China",
+        "sector": "Financial Services",
+        "symbol": "601288.SS"
+    },
+    {
+        "name": "Costco",
+        "marketcap": 382840000000,
+        "country": "United States",
+        "sector": "Retail",
+        "symbol": "COST"
+    },
+    {
+        "name": "LVMH",
+        "marketcap": 375970000000,
+        "country": "France",
+        "sector": "Luxury Goods",
+        "symbol": "MC.PA"
+    },
+    {
+        "name": "ICBC",
+        "marketcap": 361130000000,
+        "country": "China",
+        "sector": "Financial Services",
+        "symbol": "1398.HK"
+    },
+    {
+        "name": "Alibaba",
+        "marketcap": 349740000000,
+        "country": "China",
+        "sector": "Retail",
+        "symbol": "BABA"
+    },
+    {
+        "name": "AMD",
+        "marketcap": 348660000000,
+        "country": "United States",
+        "sector": "Semiconductors",
+        "symbol": "AMD"
+    },
+    {
+        "name": "China Construction Bank",
+        "marketcap": 347170000000,
+        "country": "China",
+        "sector": "Financial Services",
+        "symbol": "601939.SS"
+    },
+    {
+        "name": "Home Depot",
+        "marketcap": 342550000000,
+        "country": "United States",
+        "sector": "Retail",
+        "symbol": "HD"
+    },
+    {
+        "name": "Procter & Gamble",
+        "marketcap": 335410000000,
+        "country": "United States",
+        "sector": "Household & Personal Products",
+        "symbol": "PG"
+    },
+    {
+        "name": "Roche",
+        "marketcap": 331980000000,
+        "country": "Switzerland",
+        "sector": "Health Care",
+        "symbol": "ROG.SW"
+    },
+    {
+        "name": "General Electric",
+        "marketcap": 326640000000,
+        "country": "United States",
+        "sector": "Conglomerate",
+        "symbol": "GE"
+    },
+    {
+        "name": "Micron Technology",
+        "marketcap": 321230000000,
+        "country": "United States",
+        "sector": "Semiconductors",
+        "symbol": "MU"
+    },
+    {
+        "name": "SK Hynix",
+        "marketcap": 311510000000,
+        "country": "South Korea",
+        "sector": "Semiconductors",
+        "symbol": "000660.KS"
+    },
+    {
+        "name": "Chevron",
+        "marketcap": 307070000000,
+        "country": "United States",
+        "sector": "Oil & Gas Operations",
+        "symbol": "CVX"
+    },
+    {
+        "name": "Cisco",
+        "marketcap": 304350000000,
+        "country": "United States",
+        "sector": "Technology",
+        "symbol": "CSCO"
+    },
+    {
+        "name": "Coca-Cola",
+        "marketcap": 300860000000,
+        "country": "United States",
+        "sector": "Food & Drink",
+        "symbol": "KO"
+    },
+    {
+        "name": "UnitedHealth",
+        "marketcap": 299020000000,
+        "country": "United States",
+        "sector": "Health Care",
+        "symbol": "UNH"
+    },
+    {
+        "name": "Wells Fargo",
+        "marketcap": 298560000000,
+        "country": "United States",
+        "sector": "Financial Services",
+        "symbol": "WFC"
+    },
+    {
+        "name": "AstraZeneca",
+        "marketcap": 285030000000,
+        "country": "United Kingdom",
+        "sector": "Health Care",
+        "symbol": "AZN"
+    },
+    {
+        "name": "SAP",
+        "marketcap": 283420000000,
+        "country": "Germany",
+        "sector": "Technology",
+        "symbol": "SAP"
+    },
+    {
+        "name": "Morgan Stanley",
+        "marketcap": 283390000000,
+        "country": "United States",
+        "sector": "Financial Services",
+        "symbol": "MS"
+    },
+    {
+        "name": "Toyota",
+        "marketcap": 278990000000,
+        "country": "Japan",
+        "sector": "Automotive",
+        "symbol": "TM"
+    },
+    {
+        "name": "IBM",
+        "marketcap": 276870000000,
+        "country": "United States",
+        "sector": "Technology",
+        "symbol": "IBM"
+    },
+    {
+        "name": "Prosus",
+        "marketcap": 271160000000,
+        "country": "Netherlands",
+        "sector": "Technology",
+        "symbol": "PRX.AS"
+    },
+    {
+        "name": "HSBC",
+        "marketcap": 270080000000,
+        "country": "United Kingdom",
+        "sector": "Financial Services",
+        "symbol": "HSBC"
+    },
+    {
+        "name": "Caterpillar",
+        "marketcap": 268370000000,
+        "country": "United States",
+        "sector": "Other",
+        "symbol": "CAT"
+    },
+    {
+        "name": "Goldman Sachs",
+        "marketcap": 266090000000,
+        "country": "United States",
+        "sector": "Financial Services",
+        "symbol": "GS"
+    },
+    {
+        "name": "Novartis",
+        "marketcap": 264540000000,
+        "country": "Switzerland",
+        "sector": "Health Care",
+        "symbol": "NVS"
+    },
+    {
+        "name": "PetroChina",
+        "marketcap": 264400000000,
+        "country": "China",
+        "sector": "Oil & Gas Operations",
+        "symbol": "601857.SS"
+    },
+    {
+        "name": "Bank of China",
+        "marketcap": 264030000000,
+        "country": "China",
+        "sector": "Financial Services",
+        "symbol": "601988.SS"
+    },
+    {
+        "name": "Merck",
+        "marketcap": 262910000000,
+        "country": "United States",
+        "sector": "Health Care",
+        "symbol": "MRK"
+    },
+    {
+        "name": "Hermès",
+        "marketcap": 261220000000,
+        "country": "France",
+        "sector": "Luxury Goods",
+        "symbol": "RMS.PA"
+    },
+    {
+        "name": "American Express",
+        "marketcap": 257440000000,
+        "country": "United States",
+        "sector": "Financial Services",
+        "symbol": "AXP"
+    },
+    {
+        "name": "Nestlé",
+        "marketcap": 255410000000,
+        "country": "Switzerland",
+        "sector": "Food & Drink",
+        "symbol": "NESN.SW"
+    },
+    {
+        "name": "Salesforce",
+        "marketcap": 252190000000,
+        "country": "United States",
+        "sector": "Technology",
+        "symbol": "CRM"
+    },
+    {
+        "name": "Philip Morris",
+        "marketcap": 249680000000,
+        "country": "United States",
+        "sector": "Other",
+        "symbol": "PM"
+    },
+    {
+        "name": "Kweichow Moutai",
+        "marketcap": 246630000000,
+        "country": "China",
+        "sector": "Food & Drink",
+        "symbol": "600519.SS"
+    },
+    {
+        "name": "Raytheon Technologies",
+        "marketcap": 245890000000,
+        "country": "United States",
+        "sector": "Aerospace & Defense",
+        "symbol": "RTX"
+    },
+    {
+        "name": "CATL",
+        "marketcap": 241340000000,
+        "country": "China",
+        "sector": "Other",
+        "symbol": "300750.SZ"
+    },
+    {
+        "name": "Royal Bank Of Canada",
+        "marketcap": 239520000000,
+        "country": "Canada",
+        "sector": "Financial Services",
+        "symbol": "RY"
+    },
+    {
+        "name": "International Holding Company",
+        "marketcap": 238640000000,
+        "country": "United Arab Emirates",
+        "sector": "Conglomerate",
+        "symbol": "IHC.AE"
+    },
+    {
+        "name": "Reliance Industries",
+        "marketcap": 236320000000,
+        "country": "India",
+        "sector": "Conglomerate",
+        "symbol": "RELIANCE.NS"
+    },
+    {
+        "name": "China Mobile",
+        "marketcap": 229800000000,
+        "country": "China",
+        "sector": "Telecommunications Services",
+        "symbol": "0941.HK"
+    },
+    {
+        "name": "L'Oréal",
+        "marketcap": 229780000000,
+        "country": "France",
+        "sector": "Luxury Goods",
+        "symbol": "OR.PA"
+    },
+    {
+        "name": "T-Mobile US",
+        "marketcap": 228500000000,
+        "country": "United States",
+        "sector": "Telecommunications Services",
+        "symbol": "TMUS"
+    },
+    {
+        "name": "AppLovin",
+        "marketcap": 227910000000,
+        "country": "United States",
+        "sector": "Technology",
+        "symbol": "APP"
+    },
+    {
+        "name": "Novo Nordisk",
+        "marketcap": 226080000000,
+        "country": "Denmark",
+        "sector": "Health Care",
+        "symbol": "NVO"
+    },
+    {
+        "name": "Siemens",
+        "marketcap": 219940000000,
+        "country": "Germany",
+        "sector": "Other",
+        "symbol": "SIEGY"
+    },
+    {
+        "name": "McDonald's",
+        "marketcap": 218090000000,
+        "country": "United States",
+        "sector": "Retail",
+        "symbol": "MCD"
+    },
+    {
+        "name": "Abbott Laboratories",
+        "marketcap": 218060000000,
+        "country": "United States",
+        "sector": "Health Care",
+        "symbol": "ABT"
+    },
+    {
+        "name": "Thermo Fisher Scientific",
+        "marketcap": 217700000000,
+        "country": "United States",
+        "sector": "Health Care",
+        "symbol": "TMO"
+    },
+    {
+        "name": "Lam Research",
+        "marketcap": 215860000000,
+        "country": "United States",
+        "sector": "Semiconductors",
+        "symbol": "LRCX"
+    },
+    {
+        "name": "Citigroup",
+        "marketcap": 214810000000,
+        "country": "United States",
+        "sector": "Financial Services",
+        "symbol": "C"
+    },
+    {
+        "name": "Shopify",
+        "marketcap": 209550000000,
+        "country": "Canada",
+        "sector": "Retail",
+        "symbol": "SHOP"
+    },
+    {
+        "name": "Shell",
+        "marketcap": 209340000000,
+        "country": "United Kingdom",
+        "sector": "Oil & Gas Operations",
+        "symbol": "SHEL"
+    },
+    {
+        "name": "Inditex",
+        "marketcap": 206170000000,
+        "country": "Spain",
+        "sector": "Retail",
+        "symbol": "IDEXY"
+    },
+    {
+        "name": "Applied Materials",
+        "marketcap": 204720000000,
+        "country": "United States",
+        "sector": "Semiconductors",
+        "symbol": "AMAT"
+    },
+    {
+        "name": "Walt Disney",
+        "marketcap": 204550000000,
+        "country": "United States",
+        "sector": "Media",
+        "symbol": "DIS"
+    },
+    {
+        "name": "Intuitive Surgical",
+        "marketcap": 203020000000,
+        "country": "United States",
+        "sector": "Health Care",
+        "symbol": "ISRG"
+    },
+    {
+        "name": "Linde",
+        "marketcap": 199930000000,
+        "country": "United Kingdom",
+        "sector": "Other",
+        "symbol": "LIN"
+    },
+    {
+        "name": "Pepsico",
+        "marketcap": 196480000000,
+        "country": "United States",
+        "sector": "Food & Drink",
+        "symbol": "PEP"
+    },
+    {
+        "name": "Blackstone Group",
+        "marketcap": 189130000000,
+        "country": "United States",
+        "sector": "Financial Services",
+        "symbol": "BX"
+    },
+    {
+        "name": "HDFC Bank",
+        "marketcap": 187380000000,
+        "country": "India",
+        "sector": "Financial Services",
+        "symbol": "HDB"
+    },
+    {
+        "name": "QUALCOMM",
+        "marketcap": 184560000000,
+        "country": "United States",
+        "sector": "Semiconductors",
+        "symbol": "QCOM"
+    },
+    {
+        "name": "Intuit",
+        "marketcap": 184410000000,
+        "country": "United States",
+        "sector": "Technology",
+        "symbol": "INTU"
+    },
+    {
+        "name": "China Life Insurance",
+        "marketcap": 183910000000,
+        "country": "China",
+        "sector": "Financial Services",
+        "symbol": "2628.HK"
+    },
+    {
+        "name": "Airbus",
+        "marketcap": 183900000000,
+        "country": "Netherlands",
+        "sector": "Aerospace & Defense",
+        "symbol": "EADSY"
+    },
+    {
+        "name": "Charles Schwab",
+        "marketcap": 181350000000,
+        "country": "United States",
+        "sector": "Financial Services",
+        "symbol": "SCHW"
+    },
+    {
+        "name": "Mitsubishi UFJ Financial",
+        "marketcap": 180320000000,
+        "country": "Japan",
+        "sector": "Financial Services",
+        "symbol": "MUFG"
+    },
+    {
+        "name": "Commonwealth Bank",
+        "marketcap": 179200000000,
+        "country": "Australia",
+        "sector": "Financial Services",
+        "symbol": "CBA.AX"
+    },
+    {
+        "name": "GE Vernova",
+        "marketcap": 177910000000,
+        "country": "United States",
+        "sector": "Other",
+        "symbol": "GEV"
+    },
+    {
+        "name": "AT&T",
+        "marketcap": 177610000000,
+        "country": "United States",
+        "sector": "Telecommunications Services",
+        "symbol": "T"
+    },
+    {
+        "name": "Ping An Insurance",
+        "marketcap": 177120000000,
+        "country": "China",
+        "sector": "Financial Services",
+        "symbol": "2318.HK"
+    },
+    {
+        "name": "Allianz SE",
+        "marketcap": 176790000000,
+        "country": "Germany",
+        "sector": "Financial Services",
+        "symbol": "ALIZY"
+    }
+]
