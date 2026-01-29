@@ -43,6 +43,7 @@ State is managed in `js/app.js` with this structure:
 - `currentYear`: Selected primary year
 - `compareYear`: Optional second year for side-by-side comparison
 - `viewType`: 'chart' or 'table'
+- `sidebarCollapsed`: Whether the filter sidebar is collapsed (persisted to localStorage)
 - `filters`: Search term, selected sectors, selected regions
 
 ### Data Schema
@@ -88,13 +89,24 @@ Bubble radius scales with market cap (15-90px range for single view, 15-60px for
 - Oil & Gas Operations: #7CFC00 (Lawn Green)
 - Plus 9 additional sectors defined in `sectorColors` object
 
+### UI Features
+
+**Collapsible Sidebar:** The filter sidebar can be collapsed via the chevron button in the "Filters" header. When collapsed, charts expand to full width. State is persisted to localStorage (`marketcap-sidebar-collapsed`). A floating expand button appears at the left edge when collapsed.
+
+**PNG Export:** The "Export PNG" button exports the current chart view as a high-resolution PNG image (2x scale for retina displays):
+- Single view: `marketcap_{year}.png`
+- Comparison view: `marketcap_{year}_vs_{compareYear}.png` with both charts side-by-side and year labels
+
+The export uses native Canvas API with SVG serialization. Computed styles are extracted from the original DOM elements and inlined into the cloned SVG before serialization.
+
 ## Key Files
 
 - `explorer.html` - Main application entry point
-- `js/app.js` - State management, UI event handlers, initialization
+- `js/app.js` - State management, UI event handlers, sidebar toggle, initialization
 - `js/chart.js` - D3 bubble chart rendering and interactions
-- `js/data.js` - Data utilities, formatting, sector colors
+- `js/data.js` - Data utilities, formatting, sector colors, CSV/PNG export
 - `js/filters.js` - Search/filter state and UI
+- `css/explorer.css` - Styles including collapsible sidebar transitions
 - `data/*.json` - Normalized company data per year
 - `PRD.md` - Product requirements document
 - `TECHNICAL_REQUIREMENTS.md` - Detailed technical specifications

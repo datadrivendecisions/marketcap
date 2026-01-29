@@ -13,6 +13,7 @@ import {
   getUniqueRegions,
   sectorColors,
   exportToCSV,
+  exportToPNG,
   availableYears
 } from './data.js';
 
@@ -43,6 +44,7 @@ const state = {
   compareYear: null,
   viewType: 'chart',
   selectedCompany: null,
+  sidebarCollapsed: false,
   filters: {
     search: '',
     sectors: [],
@@ -82,6 +84,8 @@ async function init() {
     initTableSort();
     initExportButton();
     initCompanyDetail();
+    initSidebarToggle();
+    initExportPNGButton();
 
     // Render initial view
     renderCurrentView();
@@ -199,6 +203,115 @@ function initCompanyDetail() {
 }
 
 /**
+ * Initialize sidebar toggle functionality
+ */
+function initSidebarToggle() {
+  const toggleBtn = document.getElementById('sidebar-toggle');
+  const expandBtn = document.getElementById('sidebar-expand-btn');
+  const container = document.getElementById('main-content');
+
+  if (!toggleBtn || !expandBtn || !container) return;
+
+  // Load saved state from localStorage
+  const savedState = localStorage.getItem('marketcap-sidebar-collapsed');
+  if (savedState === 'true') {
+    state.sidebarCollapsed = true;
+    container.classList.add('sidebar-collapsed');
+    expandBtn.classList.remove('d-none');
+    toggleBtn.setAttribute('aria-expanded', 'false');
+    toggleBtn.setAttribute('aria-label', 'Expand sidebar');
+  }
+
+  // Toggle button click handler
+  toggleBtn.addEventListener('click', () => toggleSidebar());
+
+  // Expand button click handler
+  expandBtn.addEventListener('click', () => toggleSidebar());
+
+  // Re-render chart after transition completes
+  container.addEventListener('transitionend', handleSidebarTransitionEnd);
+}
+
+/**
+ * Toggle sidebar collapsed state
+ */
+function toggleSidebar() {
+  const container = document.getElementById('main-content');
+  const toggleBtn = document.getElementById('sidebar-toggle');
+  const expandBtn = document.getElementById('sidebar-expand-btn');
+
+  state.sidebarCollapsed = !state.sidebarCollapsed;
+
+  // Update DOM
+  container.classList.toggle('sidebar-collapsed', state.sidebarCollapsed);
+  expandBtn.classList.toggle('d-none', !state.sidebarCollapsed);
+
+  // Update ARIA and icon
+  toggleBtn.setAttribute('aria-expanded', String(!state.sidebarCollapsed));
+  toggleBtn.setAttribute('aria-label', state.sidebarCollapsed ? 'Expand sidebar' : 'Collapse sidebar');
+
+  // Persist to localStorage
+  localStorage.setItem('marketcap-sidebar-collapsed', String(state.sidebarCollapsed));
+}
+
+/**
+ * Handle sidebar transition end - re-render chart at new width
+ */
+function handleSidebarTransitionEnd(event) {
+  // Only respond to transitions on the main element (not bubbling events)
+  if (event.target.tagName !== 'MAIN') return;
+  // Only trigger on relevant properties
+  if (event.propertyName !== 'max-width' && event.propertyName !== 'flex') return;
+
+  // Re-render chart to use new available width
+  if (state.viewType === 'chart') {
+    renderCurrentView();
+  }
+}
+
+/**
+ * Initialize PNG export button
+ */
+function initExportPNGButton() {
+  const btn = document.getElementById('export-png');
+  if (!btn) return;
+
+  btn.addEventListener('click', handleExportPNG);
+}
+
+/**
+ * Handle PNG export button click
+ */
+async function handleExportPNG() {
+  const btn = document.getElementById('export-png');
+  const originalHTML = btn.innerHTML;
+
+  // Show loading state
+  btn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status"></span> Exporting...';
+  btn.disabled = true;
+
+  try {
+    // Stop simulation to freeze bubble positions
+    stopSimulation();
+
+    // Small delay to ensure rendering is complete
+    await new Promise(resolve => setTimeout(resolve, 100));
+
+    await exportToPNG(
+      state.compareYear !== null,
+      state.currentYear,
+      state.compareYear
+    );
+  } catch (error) {
+    console.error('PNG export failed:', error);
+    alert('Export failed. Please try again.');
+  } finally {
+    btn.innerHTML = originalHTML;
+    btn.disabled = false;
+  }
+}
+
+/**
  * Select a year
  */
 function selectYear(year) {
@@ -269,6 +382,12 @@ function setViewType(type) {
   // Toggle containers
   document.getElementById('chart-container').classList.toggle('d-none', type !== 'chart');
   document.getElementById('table-container').classList.toggle('d-none', type !== 'table');
+
+  // Toggle export PNG button (only visible in chart view)
+  const exportPngBtn = document.getElementById('export-png');
+  if (exportPngBtn) {
+    exportPngBtn.classList.toggle('d-none', type !== 'chart');
+  }
 
   if (type === 'table') {
     renderTable();

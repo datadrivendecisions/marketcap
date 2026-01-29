@@ -476,3 +476,110 @@ header h1 {
 .filter-checkboxes::-webkit-scrollbar-thumb:hover {
   background: #a1a1a1;
 }
+
+/* ===================== */
+/* Collapsible Sidebar   */
+/* ===================== */
+
+/* Sidebar wrapper - transition for width changes */
+.sidebar-collapsible {
+  transition: width var(--transition-duration) ease,
+              min-width var(--transition-duration) ease,
+              opacity var(--transition-duration) ease,
+              padding var(--transition-duration) ease;
+  overflow: hidden;
+}
+
+/* Collapsed state - hide sidebar */
+.sidebar-collapsed .sidebar-collapsible {
+  width: 0 !important;
+  min-width: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Collapsed state - expand main area */
+.sidebar-collapsed main.col-lg-10,
+.sidebar-collapsed main.col-md-9 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* Normal state - ensure main area transitions smoothly */
+main.col-lg-10,
+main.col-md-9 {
+  transition: flex var(--transition-duration) ease,
+              max-width var(--transition-duration) ease;
+}
+
+/* Card header for toggle button */
+#filters-panel .card-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+/* Toggle button in card header */
+.sidebar-toggle {
+  color: #6c757d;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.sidebar-toggle:hover {
+  color: #495057;
+}
+
+.sidebar-toggle:focus {
+  box-shadow: none;
+  outline: 2px solid #0d6efd;
+  outline-offset: 2px;
+}
+
+/* Floating expand button (visible when collapsed) */
+.sidebar-expand-btn {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  border-radius: 0 4px 4px 0;
+  padding: 1rem 0.5rem;
+  background-color: #fff;
+  border-left: none;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.sidebar-expand-btn:hover {
+  transform: translateY(-50%) translateX(2px);
+  background-color: #f8f9fa;
+}
+
+/* Expand button visibility is controlled via JS (d-none class) */
+
+/* Hide card content smoothly */
+.sidebar-content {
+  transition: opacity calc(var(--transition-duration) / 2) ease;
+}
+
+.sidebar-collapsed .sidebar-content {
+  opacity: 0;
+}
+
+/* Responsive: on mobile/tablet, adjust expand button position */
+@media (max-width: 991px) {
+  .sidebar-expand-btn {
+    top: auto;
+    bottom: 1rem;
+    left: 1rem;
+    transform: none;
+    border-radius: 4px;
+    border: 1px solid #dee2e6;
+  }
+
+  .sidebar-expand-btn:hover {
+    transform: translateY(-2px);
+  }
+}

@@ -125,13 +125,22 @@ export function renderChart(containerId, companies, options = {}) {
 function renderRegionLabels(svg, width, height) {
   const regions = Object.entries(regionPositions);
 
+  // Custom y-offsets per region to avoid label overlap
+  // Oceania needs smaller offset since it's at the bottom edge
+  const labelYOffsets = {
+    "North America": -100,
+    "Europe": -100,
+    "Asia": -100,
+    "Oceania": -30
+  };
+
   svg.selectAll('.region-label')
     .data(regions)
     .enter()
     .append('text')
     .attr('class', 'region-label')
     .attr('x', d => d[1].x * width)
-    .attr('y', d => d[1].y * height - 100)
+    .attr('y', d => d[1].y * height + (labelYOffsets[d[0]] || -100))
     .text(d => d[0]);
 }
 
