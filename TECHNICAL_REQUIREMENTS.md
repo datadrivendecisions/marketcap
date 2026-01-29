@@ -271,20 +271,31 @@ function exportCSV() -> void
 
 **Geographic Clustering:**
 ```javascript
+// Region positions as fractions of chart dimensions (spread apart for clear separation)
 const regionPositions = {
-  "North America": { x: 350, y: 450, radius: 400 },
-  "Europe":        { x: 900, y: 300, radius: 320 },
-  "Asia":          { x: 1100, y: 600, radius: 350 },
-  "Oceania":       { x: 1200, y: 850, radius: 150 }
+  "North America": { x: 0.22, y: 0.5 },
+  "Europe":        { x: 0.72, y: 0.25 },
+  "Asia":          { x: 0.78, y: 0.72 },
+  "Oceania":       { x: 0.92, y: 0.92 }
 };
 ```
 
 **Force Simulation Parameters:**
 ```javascript
+// Adaptive force strength based on regional diversity
+// When one region dominates (e.g., 68% North America in 2004),
+// increase force strength to keep bubbles clustered
+const regionDominance = maxRegionCount / nodes.length;
+const baseStrength = 0.4;
+const forceStrength = regionDominance > 0.5
+  ? baseStrength + (regionDominance - 0.5) * 1.5  // Up to 0.67 for 2004
+  : baseStrength;
+const collideStrength = regionDominance > 0.5 ? 0.5 : 0.8;
+
 const simulation = d3.forceSimulation(nodes)
-  .force("x", d3.forceX(d => regionPositions[d.region].x).strength(0.3))
-  .force("y", d3.forceY(d => regionPositions[d.region].y).strength(0.3))
-  .force("collide", d3.forceCollide(d => radiusScale(d.marketcap) + 2).strength(1))
+  .force("x", d3.forceX(d => regionPositions[d.region].x * width).strength(forceStrength))
+  .force("y", d3.forceY(d => regionPositions[d.region].y * height).strength(forceStrength))
+  .force("collide", d3.forceCollide(d => d.r + 2).strength(collideStrength))
   .alphaDecay(0.02);
 ```
 

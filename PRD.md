@@ -47,11 +47,12 @@ The current implementation consists of separate static HTML pages for each year 
 - Smooth animated transitions when switching years
 
 **2. Interactive Bubble Chart**
-- Maintain existing geographic clustering (North America, Europe, Asia, Oceania)
+- Geographic clustering (North America, Europe, Asia, Oceania) with adaptive force strength
 - Bubble size = market cap
 - Color coding by sector
 - Click bubble to see company details
 - Hover for quick info tooltip
+- Adaptive clustering: force strength increases when one region dominates (e.g., 2004 with 68% North America) to maintain clear regional separation
 
 **3. Company Search & Filter**
 - Search by company name or ticker symbol
@@ -220,12 +221,16 @@ The current implementation consists of separate static HTML pages for each year 
 
 ---
 
+### Hosting
+
+The application is hosted on GitHub Pages:
+- **Live URL**: https://datadrivendecisions.github.io/marketcap/explorer.html
+
 ### Open Questions
 
 1. **Naming**: Should the app have a specific brand name?
 2. **Additional Years**: Plan to add more historical years (2014, 2019)?
 3. **Data Updates**: Will this be updated annually?
-4. **Hosting**: Where will this be deployed?
 
 ---
 

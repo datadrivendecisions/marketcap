@@ -68,12 +68,14 @@ Market caps are stored in actual USD (not millions). The 2004 data was converted
 ### Visualization
 
 D3 force simulation clusters bubbles by region:
-- North America (x: 0.25, y: 0.5)
-- Europe (x: 0.65, y: 0.3)
-- Asia (x: 0.75, y: 0.65)
-- Oceania (x: 0.85, y: 0.85)
+- North America (x: 0.22, y: 0.5)
+- Europe (x: 0.72, y: 0.25)
+- Asia (x: 0.78, y: 0.72)
+- Oceania (x: 0.92, y: 0.92)
 
 Bubble radius scales with market cap (15-90px range for single view, 15-60px for comparison).
+
+**Adaptive Force Strength:** The simulation dynamically adjusts force strength based on regional diversity. When one region dominates (e.g., 68% North America in 2004), force strength increases from 0.4 to ~0.67 and collision strength decreases from 0.8 to 0.5 to keep bubbles clustered rather than spreading across the view.
 
 ### Sector Colors
 
@@ -103,3 +105,8 @@ The repository contains older single-year visualizations that are not part of th
 - `index.html` - Original 2024-only visualization
 - `world2004.html` - Original 2004-only visualization
 - `top_100_companies*.json` - Original unnormalized data files
+
+## Hosting
+
+The application is hosted on GitHub Pages:
+- **Live URL**: https://datadrivendecisions.github.io/marketcap/explorer.html
