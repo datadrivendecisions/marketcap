@@ -28,7 +28,7 @@ export function renderChart(containerId, companies, options = {}) {
     .attr('viewBox', `0 0 ${width} ${height}`);
 
   // Add region labels
-  renderRegionLabels(svg, width, height);
+  renderRegionLabels(svg, width, height, companies);
 
   // Calculate scales
   const marketcaps = companies.map(c => c.marketcap);
@@ -122,8 +122,11 @@ export function renderChart(containerId, companies, options = {}) {
 /**
  * Render region labels in the background
  */
-function renderRegionLabels(svg, width, height) {
-  const regions = Object.entries(regionPositions);
+function renderRegionLabels(svg, width, height, companies = null) {
+  // Only label regions that actually have companies in this view
+  const present = companies ? new Set(companies.map(c => c.region)) : null;
+  const regions = Object.entries(regionPositions)
+    .filter(([name]) => !present || present.has(name));
 
   // Custom y-offsets per region to avoid label overlap
   // Oceania needs smaller offset since it's at the bottom edge
@@ -131,7 +134,9 @@ function renderRegionLabels(svg, width, height) {
     "North America": -100,
     "Europe": -100,
     "Asia": -100,
-    "Oceania": -30
+    "Oceania": -30,
+    "South America": 75,
+    "Africa": 70
   };
 
   svg.selectAll('.region-label')

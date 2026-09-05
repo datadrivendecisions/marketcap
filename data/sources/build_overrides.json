@@ -1,0 +1,157 @@
+{
+ "SZE": {
+  "name": "Suez",
+  "country": "France",
+  "sector": "Other"
+ },
+ "FBF": {
+  "name": "FleetBoston Financial",
+  "country": "United States",
+  "sector": "Financial Services"
+ },
+ "FITB": {
+  "name": "Fifth Third Bancorp",
+  "country": "United States",
+  "sector": "Financial Services"
+ },
+ "MER": {
+  "name": "Merrill Lynch",
+  "country": "United States",
+  "sector": "Financial Services"
+ },
+ "ONE": {
+  "name": "Bank One",
+  "country": "United States",
+  "sector": "Financial Services"
+ },
+ "AVE": {
+  "name": "Aventis",
+  "country": "France",
+  "sector": "Health Care"
+ },
+ "TYC": {
+  "name": "Tyco International",
+  "country": "United States",
+  "sector": "Conglomerate"
+ },
+ "ABN": {
+  "name": "ABN AMRO",
+  "country": "Netherlands",
+  "sector": "Financial Services"
+ },
+ "TWX": {
+  "name": "Time Warner",
+  "country": "United States",
+  "sector": "Media"
+ },
+ "BUD": {
+  "name": "Anheuser-Busch",
+  "country": "United States",
+  "sector": "Food & Drink"
+ },
+ "ABI.BR": {
+  "name": "AB InBev",
+  "country": "Belgium",
+  "sector": "Food & Drink"
+ },
+ "SC": {
+  "name": "Shell Transport",
+  "country": "United Kingdom",
+  "sector": "Oil & Gas Operations"
+ },
+ "DELL": {
+  "name": "Dell",
+  "country": "United States",
+  "sector": "Technology"
+ },
+ "HBOS": {
+  "name": "HBOS",
+  "country": "United Kingdom",
+  "sector": "Financial Services"
+ },
+ "RBS": {
+  "name": "Royal Bank of Scotland",
+  "country": "United Kingdom",
+  "sector": "Financial Services"
+ },
+ "OGZPY": {
+  "name": "Gazprom",
+  "country": "Russia",
+  "sector": "Oil & Gas Operations"
+ },
+ "LKOH.ME": {
+  "name": "Lukoil",
+  "country": "Russia",
+  "sector": "Oil & Gas Operations"
+ },
+ "ROSN.ME": {
+  "name": "Rosneft",
+  "country": "Russia",
+  "sector": "Oil & Gas Operations"
+ },
+ "SBER.ME": {
+  "name": "Sberbank",
+  "country": "Russia",
+  "sector": "Financial Services"
+ },
+ "SNGS.ME": {
+  "name": "Surgutneftegas",
+  "country": "Russia",
+  "sector": "Oil & Gas Operations"
+ },
+ "2010.SR": {
+  "name": "SABIC",
+  "country": "Saudi Arabia",
+  "sector": "Other"
+ },
+ "XTA.L": {
+  "name": "Xstrata",
+  "country": "United Kingdom",
+  "sector": "Other"
+ },
+ "SAB.L": {
+  "name": "SABMiller",
+  "country": "United Kingdom",
+  "sector": "Food & Drink"
+ },
+ "FORB.BR": {
+  "name": "Fortis",
+  "country": "Belgium",
+  "sector": "Financial Services"
+ },
+ "RAI": {
+  "name": "Reynolds American",
+  "country": "United States",
+  "sector": "Other"
+ },
+ "FOXA": {
+  "name": "Twenty-First Century Fox",
+  "country": "United States",
+  "sector": "Media"
+ },
+ "CELG": {
+  "name": "Celgene",
+  "country": "United States",
+  "sector": "Health Care"
+ },
+ "EMC": {
+  "name": "EMC",
+  "country": "United States",
+  "sector": "Technology"
+ },
+ "MFG": {
+  "name": "Mizuho Financial Group",
+  "country": "Japan",
+  "sector": "Financial Services"
+ },
+ "7974.T": {
+  "name": "Nintendo",
+  "country": "Japan",
+  "sector": "Media"
+ },
+ "KFT": {
+  "name": "Kraft Foods",
+  "country": "United States",
+  "sector": "Food & Drink"
+ }
+}

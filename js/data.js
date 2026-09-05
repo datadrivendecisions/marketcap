@@ -27,11 +27,13 @@ export const regionPositions = {
   "North America": { x: 0.22, y: 0.5 },
   "Europe": { x: 0.72, y: 0.25 },
   "Asia": { x: 0.78, y: 0.72 },
-  "Oceania": { x: 0.92, y: 0.92 }
+  "Oceania": { x: 0.92, y: 0.92 },
+  "South America": { x: 0.28, y: 0.9 },
+  "Africa": { x: 0.55, y: 0.92 }
 };
 
 // Available years
-export const availableYears = [2004, 2024, 2025];
+export const availableYears = Array.from({ length: 26 }, (_, i) => 2001 + i); // 2001 … 2026
 
 /**
  * Load data for all years

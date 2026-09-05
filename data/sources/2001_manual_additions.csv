@@ -1,0 +1,12 @@
+name,symbol,local_marketcap,currency,fx_usd_per_unit_or_units_per_usd,fx_date,marketcap_usd,price_basis,shares_basis,source,included_in_top100
+NTT DoCoMo,DCM,15455440000000,JPY,131.3,2001-12-28,117710891089,"JPY 1,540,000 close 28 Dec 2001 (TSE)","10,036,000",Nikkei archived quote page; Form 20-F FY2001,yes
+Nestlé,NESN.SW,137230000000,CHF,1.679,2001-12-28,81733174508,CHF 354.00 close 28 Dec 2001 (SWX),"387,655,546 net of treasury (403,520,000 issued)","company-stated CHF 137,230m, Management Report 2001",yes
+Royal Bank of Scotland,RBS,47810000000,GBP,1.4543,2001-12-31,69530083000,"1,672p close 31 Dec 2001 (LSE)","2,859,520,445","company-stated £47.8bn, Form 20-F 2001",yes
+Roche,ROG.SW,102209000000,CHF,1.679,2001-12-28,60874925550,"bearer CHF 136.00 / Genussschein CHF 118.50, 28 Dec 2001 (SWX)","160,000,000 shares + 702,562,700 Genussscheine (net of own securities)","company-stated CHF 102,209m, Finance Report 2005 five-year table",yes
+Sanofi-Synthélabo,SNY,61342000000,EUR,0.8822,2001-12-28,54115912400,EUR 83.80 close 28 Dec 2001 (Paris),"732,005,084","company-stated EUR 61,342m, Document de référence 2001",yes
+L'Oréal,OR.PA,54693000000,EUR,0.8822,2001-12-28,48250164600,EUR 80.90 close 28 Dec 2001 (Paris),"676,062,160","company-stated EUR 54.7bn, Document de référence 2001",yes
+Munich Re,MUV2.DE,53961000000,EUR,0.8822,2001-12-28,47604394200,EUR 304.95 close 28 Dec 2001 (Xetra),"176,949,993","company-stated EUR 53,961m, Geschäftsbericht 2001",yes
+HBOS,HBOS,28390000000,GBP,1.4543,2001-12-31,41287577000,796p at 31 Dec 2001 (LSE),"3,566,567,091",computed; Annual Report & Accounts 2001,yes
+Hutchison Whampoa,0013.HK,320818651195,HKD,7.798,2001-12-31,41141145318,HKD 75.25 close 31 Dec 2001 (HKEX),"4,263,370,780","HKEX Fact Book 2001 HKD 320,818.65m; Annual Report 2001",yes
+Takeda,4502.T,5273385302350,JPY,131.3,2001-12-28,40162873589,"JPY 5,930 close 28 Dec 2001 (TSE)","889,272,395","computed; Takeda Databook FY2001, Yahoo Finance daily close",yes
+BNP Paribas,BNP.PA,44520000000,EUR,0.8822,2001-12-28,39275544000,EUR 100.5 close 28 Dec 2001 (Paris),"442,985,696","company-stated EUR 44.52bn, Document de référence 2001",no

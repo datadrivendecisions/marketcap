@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Market Cap Explorer is an interactive web application for visualizing and comparing the world's 100 largest companies by market capitalization across 2004, 2024, and 2025. It uses D3.js for bubble chart visualization with geographic clustering by region.
+Market Cap Explorer is an interactive web application for visualizing and comparing the world's 100 largest companies by market capitalization for every year from 2001 to 2026 (26 annual snapshots). It uses D3.js for bubble chart visualization with geographic clustering by region.
 
 ## Development Commands
 
@@ -16,7 +16,7 @@ python3 -m http.server 8080
 
 **Validate JSON data files:**
 ```bash
-python3 -c "import json; [json.load(open(f'data/{y}.json')) for y in [2004, 2024, 2025]]"
+python3 -c "import json; [json.load(open(f'data/{y}.json')) for y in range(2001, 2027)]"
 ```
 
 No build tools, bundlers, or package managers are required. The app runs directly from static files.
@@ -38,9 +38,9 @@ explorer.html
 ### Application State
 
 State is managed in `js/app.js` with this structure:
-- `data`: Raw company arrays keyed by year (2004, 2024, 2025)
+- `data`: Raw company arrays keyed by year (2001 … 2026); the list is generated in `availableYears` in `js/data.js`
 - `companyIndex`: Symbol-based lookup for cross-year company matching
-- `currentYear`: Selected primary year
+- `currentYear`: Selected primary year (defaults to 2026)
 - `compareYear`: Optional second year for side-by-side comparison
 - `viewType`: 'chart' or 'table'
 - `sidebarCollapsed`: Whether the filter sidebar is collapsed (persisted to localStorage)
@@ -64,19 +64,23 @@ All data files in `data/` follow this normalized schema:
 }
 ```
 
-Market caps are stored in actual USD (not millions). The 2004 data was converted from millions during normalization.
+Market caps are stored in actual USD (not millions). The 2004 data was converted from millions and the 2001 data from billions during normalization.
+
+Provenance, snapshot dates, ticker aliases and caveats for every year are documented in `DATA_SOURCES.md`; raw source copies live in `data/sources/`. Years 2002–2023 are year-end (31 December) snapshots assembled from companiesmarketcap.com year-end histories plus hand-researched values; 2024–2026 are in-year snapshots. When adding a year: add `data/{year}.json`, extend `availableYears` in `js/data.js`, and document the source in `DATA_SOURCES.md`. The year dropdown, step buttons, compare options and the detail-panel history table are all generated from `availableYears`.
 
 ### Visualization
 
-D3 force simulation clusters bubbles by region:
+D3 force simulation clusters bubbles by region (South America and Africa clusters exist too, and region labels are drawn only for regions present in the selected year):
 - North America (x: 0.22, y: 0.5)
 - Europe (x: 0.72, y: 0.25)
 - Asia (x: 0.78, y: 0.72)
 - Oceania (x: 0.92, y: 0.92)
+- South America (x: 0.28, y: 0.9)
+- Africa (x: 0.55, y: 0.92)
 
 Bubble radius scales with market cap (15-90px range for single view, 15-60px for comparison).
 
-**Adaptive Force Strength:** The simulation dynamically adjusts force strength based on regional diversity. When one region dominates (e.g., 68% North America in 2004), force strength increases from 0.4 to ~0.67 and collision strength decreases from 0.8 to 0.5 to keep bubbles clustered rather than spreading across the view.
+**Adaptive Force Strength:** The simulation dynamically adjusts force strength based on regional diversity. When one region dominates (e.g., 68% North America in 2004, 60% in 2001), force strength increases from 0.4 to ~0.67 and collision strength decreases from 0.8 to 0.5 to keep bubbles clustered rather than spreading across the view.
 
 ### Sector Colors
 
@@ -90,6 +94,8 @@ Bubble radius scales with market cap (15-90px range for single view, 15-60px for
 - Plus 9 additional sectors defined in `sectorColors` object
 
 ### UI Features
+
+**Year Navigation:** A year dropdown with previous/next buttons (and left/right arrow keys) steps through 2001–2026; the compare dropdown offers every other year. The company detail panel shows a scrollable year-by-year rank and market cap table plus growth for the latest step and the full span.
 
 **Collapsible Sidebar:** The filter sidebar can be collapsed via the chevron button in the "Filters" header. When collapsed, charts expand to full width. State is persisted to localStorage (`marketcap-sidebar-collapsed`). A floating expand button appears at the left edge when collapsed.
 
@@ -108,6 +114,8 @@ The export uses native Canvas API with SVG serialization. Computed styles are ex
 - `js/filters.js` - Search/filter state and UI
 - `css/explorer.css` - Styles including collapsible sidebar transitions
 - `data/*.json` - Normalized company data per year
+- `data/sources/` - Raw source copies for the 2001 and 2026 datasets
+- `DATA_SOURCES.md` - Sources, snapshot dates and normalization notes per year
 - `PRD.md` - Product requirements document
 - `TECHNICAL_REQUIREMENTS.md` - Detailed technical specifications
 

@@ -4,7 +4,7 @@
 
 ### Overview
 
-Create an interactive web application that allows users to explore and compare the world's largest companies by market capitalization across three time periods: 2004, 2024, and 2025.
+Create an interactive web application that allows users to explore and compare the world's largest companies by market capitalization across every year from 2001 to 2026 (extended September 2026; sources in `DATA_SOURCES.md`).
 
 ---
 

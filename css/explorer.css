@@ -314,16 +314,38 @@ header h1 {
   margin-bottom: 0.75rem;
 }
 
-#company-detail-content .year-card.year-2004 {
-  background-color: #fff3cd;
+#company-detail-content .history-table-wrap {
+  max-height: 40vh;
+  overflow-y: auto;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
 }
 
-#company-detail-content .year-card.year-2024 {
-  background-color: #cfe2ff;
+#company-detail-content .history-table {
+  margin-bottom: 0;
 }
 
-#company-detail-content .year-card.year-2025 {
-  background-color: #d1e7dd;
+#company-detail-content .history-table thead th {
+  position: sticky;
+  top: 0;
+  background: #f8f9fa;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+#company-detail-content .history-table td {
+  font-size: 0.9rem;
+  vertical-align: middle;
+}
+
+#company-detail-content .history-table tr.not-ranked td {
+  color: #adb5bd;
+}
+
+.year-select {
+  width: auto;
+  min-width: 6.5rem;
+  font-weight: 600;
 }
 
 #company-detail-content .year-card.not-ranked {

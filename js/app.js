@@ -40,7 +40,7 @@ import {
 const state = {
   data: {},
   companyIndex: {},
-  currentYear: 2024,
+  currentYear: 2026,
   compareYear: null,
   viewType: 'chart',
   selectedCompany: null,
@@ -72,6 +72,13 @@ async function init() {
     const sectors = getAllSectors(state.data);
     const regions = getUniqueRegions(state.data);
 
+    // Optional deep link: explorer.html?year=2008&compare=2001
+    const params = new URLSearchParams(window.location.search);
+    const urlYear = parseInt(params.get('year'));
+    const urlCompare = parseInt(params.get('compare'));
+    if (availableYears.includes(urlYear)) state.currentYear = urlYear;
+    if (availableYears.includes(urlCompare) && urlCompare !== state.currentYear) state.compareYear = urlCompare;
+
     // Initialize filters
     initFilters(sectors, regions, handleFilterChange);
 
@@ -88,7 +95,12 @@ async function init() {
     initExportPNGButton();
 
     // Render initial view
-    renderCurrentView();
+    if (state.compareYear) {
+      document.getElementById('compare-select').value = state.compareYear;
+      setCompareYear(state.compareYear);
+    } else {
+      renderCurrentView();
+    }
 
   } catch (error) {
     console.error('Failed to initialize app:', error);
@@ -101,12 +113,44 @@ async function init() {
  * Initialize year selector buttons
  */
 function initYearSelector() {
-  document.querySelectorAll('.year-selector .btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      const year = parseInt(e.target.dataset.year);
-      selectYear(year);
-    });
+  const select = document.getElementById('year-select');
+  select.innerHTML = availableYears
+    .map(year => `<option value="${year}">${year}</option>`)
+    .join('');
+  select.value = state.currentYear;
+  select.addEventListener('change', (e) => selectYear(parseInt(e.target.value)));
+
+  document.getElementById('year-prev').addEventListener('click', () => stepYear(-1));
+  document.getElementById('year-next').addEventListener('click', () => stepYear(1));
+
+  // Arrow keys step through years when focus is not in a form control
+  document.addEventListener('keydown', (e) => {
+    const tag = (e.target.tagName || '').toLowerCase();
+    if (['input', 'select', 'textarea'].includes(tag)) return;
+    if (e.key === 'ArrowLeft') stepYear(-1);
+    if (e.key === 'ArrowRight') stepYear(1);
   });
+
+  updateYearControls();
+}
+
+/**
+ * Move to the previous/next available year
+ */
+function stepYear(direction) {
+  const index = availableYears.indexOf(state.currentYear) + direction;
+  if (index < 0 || index >= availableYears.length) return;
+  selectYear(availableYears[index]);
+}
+
+/**
+ * Sync the year dropdown and step buttons with the current year
+ */
+function updateYearControls() {
+  document.getElementById('year-select').value = state.currentYear;
+  const index = availableYears.indexOf(state.currentYear);
+  document.getElementById('year-prev').disabled = index <= 0;
+  document.getElementById('year-next').disabled = index >= availableYears.length - 1;
 }
 
 /**
@@ -114,6 +158,9 @@ function initYearSelector() {
  */
 function initCompareSelector() {
   const select = document.getElementById('compare-select');
+  select.insertAdjacentHTML('beforeend', availableYears
+    .map(year => `<option value="${year}">vs ${year}</option>`)
+    .join(''));
   select.addEventListener('change', (e) => {
     const compareYear = e.target.value ? parseInt(e.target.value) : null;
     setCompareYear(compareYear);
@@ -317,10 +364,7 @@ async function handleExportPNG() {
 function selectYear(year) {
   state.currentYear = year;
 
-  // Update button states
-  document.querySelectorAll('.year-selector .btn').forEach(btn => {
-    btn.classList.toggle('active', parseInt(btn.dataset.year) === year);
-  });
+  updateYearControls();
 
   // Update compare selector options
   updateCompareOptions();
@@ -612,46 +656,57 @@ function showCompanyDetail(symbol) {
 
   const content = document.getElementById('company-detail-content');
 
-  // Build year cards
-  const yearCards = availableYears.map(year => {
+  // Build the year-by-year history table
+  const historyRows = availableYears.map(year => {
     const yearData = company.years[year];
     if (yearData) {
       return `
-        <div class="year-card year-${year}">
-          <div class="d-flex justify-content-between align-items-center">
-            <span class="year-label">${year}</span>
-            <span class="rank-badge badge bg-secondary">#${yearData.rank}</span>
-          </div>
-          <div class="marketcap-value mt-2">${formatMarketCap(yearData.marketcap)}</div>
-        </div>
-      `;
-    } else {
-      return `
-        <div class="year-card not-ranked">
-          <div class="d-flex justify-content-between align-items-center">
-            <span class="year-label">${year}</span>
-            <span class="rank-badge badge bg-light text-muted">Not in top 100</span>
-          </div>
-        </div>
+        <tr class="ranked${year === state.currentYear ? ' table-active' : ''}">
+          <td class="year-label">${year}</td>
+          <td class="text-end"><span class="badge bg-secondary rank-badge">#${yearData.rank}</span></td>
+          <td class="text-end marketcap-value">${formatMarketCap(yearData.marketcap)}</td>
+        </tr>
       `;
     }
+    return `
+        <tr class="not-ranked${year === state.currentYear ? ' table-active' : ''}">
+          <td class="year-label">${year}</td>
+          <td class="text-end text-muted small" colspan="2">Not in top 100</td>
+        </tr>
+      `;
   }).join('');
+  const yearCards = `
+    <div class="history-table-wrap">
+      <table class="table table-sm history-table mb-3">
+        <thead><tr><th>Year</th><th class="text-end">Rank</th><th class="text-end">Market cap</th></tr></thead>
+        <tbody>${historyRows}</tbody>
+      </table>
+    </div>
+  `;
 
-  // Calculate growth if possible
-  let growthHtml = '';
-  if (company.years[2024] && company.years[2025]) {
-    const growth = calculateGrowth(state.companyIndex, symbol, 2024, 2025);
-    if (growth) {
-      const isPositive = growth.percent >= 0;
-      growthHtml = `
+  // Growth indicators: the most recent step between ranked years,
+  // plus the full span (e.g. 2001 -> 2026) when the company spans more than two years
+  const presentYears = availableYears.filter(year => company.years[year]);
+  const growthPairs = [];
+  if (presentYears.length >= 2) {
+    const lastYear = presentYears[presentYears.length - 1];
+    growthPairs.push([presentYears[presentYears.length - 2], lastYear]);
+    if (presentYears.length > 2) {
+      growthPairs.push([presentYears[0], lastYear]);
+    }
+  }
+  const growthHtml = growthPairs.map(([fromYear, toYear]) => {
+    const growth = calculateGrowth(state.companyIndex, symbol, fromYear, toYear);
+    if (!growth) return '';
+    const isPositive = growth.percent >= 0;
+    return `
         <div class="growth-indicator ${isPositive ? 'positive' : 'negative'}">
-          <div class="small text-muted">2024 → 2025 Growth</div>
+          <div class="small text-muted">${fromYear} → ${toYear} Growth</div>
           <div class="growth-value">${formatPercent(growth.percent)}</div>
           <div class="small">Rank change: ${growth.rankChange > 0 ? '↑' : growth.rankChange < 0 ? '↓' : '−'} ${Math.abs(growth.rankChange)} positions</div>
         </div>
       `;
-    }
-  }
+  }).join('');
 
   content.innerHTML = `
     <div class="company-header">

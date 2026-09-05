@@ -1,0 +1,101 @@
+rank,name,ticker,marketcap_usd_billions
+1,Microsoft,MSFT,283
+2,General Electric,GE,245
+3,Exxon Mobil,XOM,233
+4,Wal-Mart Stores,WMT,216
+5,Pfizer,PFE,183
+6,Citigroup,C,177
+7,Johnson & Johnson,JNJ,157
+8,BP,BP,149
+9,American Intnl Group,AIG,147
+10,Intnl Business Machines,IBM,130
+11,Merck,MRK,125
+12,Vodafone Group,VOD,119
+13,Procter & Gamble,PG,112
+14,Berkshire Hathaway,BRKA,110
+15,GlaxoSmithKline,GSK,110
+16,Intel,INTC,108
+17,Coca-Cola Co (Coke),KO,107
+18,Verizon Comm,VZ,106
+19,Bank of America,BAC,103
+20,HSBC Holdings,HBC,101
+21,Toyota Motor,TM,94
+22,Cisco Systems,CSCO,94
+23,TotalFinaElf,TOT,91
+24,Novartis,NVS,90
+25,SBC Comm,SBC,90
+26,Royal Dutch Petroleum,RD,90
+27,Philip Morris Companies,MO,85
+28,Wells Fargo,WFC,78
+29,Nokia Oyj,NOK,74
+30,Pepsico,PEP,71
+31,Viacom,VIAB,70
+32,Eli Lilly,LLY,70
+33,ChevronTexaco,CVX,70
+34,United Parcel Service,UPS,70
+35,Dell Computer,DELL,69
+36,Kraft Foods,KFT,67
+37,Fannie Mae,FNM,64
+38,Amgen,AMGN,63
+39,ENI,E,61
+40,Shell Transport & Trading Co,SC,61
+41,AstraZeneca,AZN,61
+42,Nippon Telegraph and Telephone,NTT,57
+43,Abbott Laboratories,ABT,57
+44,Oracle,ORCL,56
+45,UBS,UBS,56
+46,Medtronic,MDT,55
+47,AOL Time Warner,AOL,55
+48,Home Depot,HD,55
+49,Telecom Italia,TI,55
+50,Hewlett-Packard,HPQ,54
+51,Comcast,CMCSA,53
+52,Deutsche Telekom,DT,52
+53,Pharmacia,PHA,52
+54,Wachovia Corp (Charlotte),WB,49
+55,Wyeth,WYE,49
+56,Bellsouth Capital Funding,BLS,48
+57,JP Morgan Chase,JPM,47
+58,3M,MMM,47
+59,American Express,AXP,46
+60,China Mobile (Hong Kong),CHL,45
+61,Bristol-Myers Squibb,BMY,45
+62,Morgan Stanley,MWD,43
+63,Telefonica,TEF,43
+64,Sanofi-Synthelabo,SNY,42
+65,Bank One,ONE,42
+66,DuPont,DD,42
+67,Aventis,AVE,41
+68,Anheuser-Busch Companies,BUD,40
+69,Freddie Mac,FRE,40
+70,Barclays,BCS,40
+71,US Bancorp,USB,40
+72,Lloyds TSB Group,LYG,38
+73,Sony,SNE,38
+74,Siemens,SI,37
+75,Honda Motor,HMC,35
+76,PetroChina,PTR,35
+77,Unilever NV,UN,33
+78,Fifth Third Bancorp,FITB,33
+79,Diageo,DEO,33
+80,Merrill Lynch,MER,33
+81,Washington Mutual,WM,32
+82,Walt Disney,DIS,32
+83,Schering-Plough,SGP,32
+84,Canon,CAJ,32
+85,Goldman Sachs Group,GS,32
+86,ConocoPhillips,COP,32
+87,ING Groep NV,ING,32
+88,Telstra Corporation,TLS,31
+89,Gillette,G,31
+90,Banco Santander Central Hispano,STD,31
+91,News Corporation,NWS,30
+92,Ente Nazionale per l'Energia Elettrica,EN,30
+93,Nissan Motor,NSANY,30
+94,Tyco Intnl,TYC,30
+95,Banco Bilbao Vizcaya Argentaria,BBV,30
+96,DaimlerChrysler,DCX,29
+97,Mitsubishi Tokyo Financial Group,MTF,29
+98,Walgreen,WAG,29
+99,Qualcomm,QCOM,29
+100,Telefonica Moviles,TEM,28

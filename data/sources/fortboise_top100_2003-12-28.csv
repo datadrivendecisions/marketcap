@@ -1,0 +1,101 @@
+rank,name,ticker,marketcap_usd_billions
+1,General Electric,GE,310
+2,Microsoft,MSFT,292
+3,Pfizer,PFE,264
+4,Exxon Mobil,XOM,263
+5,Citigroup,C,246
+6,Wal-Mart Stores,WMT,229
+7,Intel,INTC,203
+8,BP,BP,180
+9,Vodafone Group,VOD,170
+10,American Intnl Group,AIG,169
+11,Cisco Systems,CSCO,164
+12,Intnl Business Machines,IBM,158
+13,Johnson & Johnson,JNJ,150
+14,HSBC Holdings,HBC,148
+15,GlaxoSmithKline,GSK,136
+16,Berkshire Hathaway,BRKA,127
+17,Procter & Gamble,PG,127
+18,Coca-Cola Co (Coke),KO,122
+19,Toyota Motor,TM,118
+20,Bank of America,BAC,117
+21,Total,TOT,112
+22,Novartis,NVS,109
+23,NTT DoCoMo,DCM,109
+24,Altria Group,MO,108
+25,Royal Dutch Petroleum,RD,106
+26,Merck,MRK,99
+27,Wells Fargo,WFC,98
+28,Verizon Comm,VZ,93
+29,Telecom Italia,TI,91
+30,PetroChina,PTR,89
+31,ChevronTexaco,CVX,89
+32,Dell,DELL,86
+33,United Parcel Service,UPS,83
+34,SBC Comm,SBC,83
+35,AstraZeneca,AZN,81
+36,Time Warner,TWX,80
+37,Pepsico,PEP,79
+38,Amgen,AMGN,79
+39,Eli Lilly,LLY,79
+40,Nokia Oyj,NOK,78
+41,Home Depot,HD,78
+42,Viacom,VIAB,75
+43,Nippon Telegraph and Telephone,NTT,75
+44,ENI,E,75
+45,Deutsche Telekom,DT,74
+46,JP Morgan Chase,JPM,73
+47,Abbott Laboratories,ABT,73
+48,Telefonica,TEF,73
+49,UBS,UBS,72
+50,Comcast,CMCSA,71
+51,Fannie Mae,FNM,70
+52,Shell Transport & Trading Co,SC,70
+53,Siemens,SI,69
+54,Hewlett-Packard,HPQ,69
+55,Oracle,ORCL,67
+56,3M,MMM,66
+57,France Telecom,FTE,63
+58,Morgan Stanley,MWD,61
+59,American Express,AXP,61
+60,Wachovia Corp (Charlotte),WB,60
+61,China Mobile (Hong Kong),CHL,60
+62,Barclays,BCS,58
+63,Medtronic,MDT,58
+64,BHP Billiton,BHP,56
+65,US Bancorp,USB,56
+66,Wyeth,WYE,55
+67,Banco Santander Central Hispano,STD,55
+68,Kraft Foods,KFT,54
+69,Merrill Lynch,MER,54
+70,Bristol-Myers Squibb,BMY,53
+71,BHP Billiton,BBL,53
+72,Tyco Intnl,TYC,52
+73,Nissan Motor,NSANY,51
+74,SAP,SAP,51
+75,BellSouth,BLS,51
+76,Aventis,AVE,51
+77,Sanofi-Synthelabo,SNY,50
+78,Bank One,ONE,50
+79,Texas Instruments,TXN,50
+80,Genentech,DNA,49
+81,Walt Disney,DIS,47
+82,Deutsche Bank,DB,46
+83,News Corporation,NWS,46
+84,DaimlerChrysler,DCX,46
+85,Goldman Sachs Group,GS,46
+86,Telstra Corporation,TLS,46
+87,ING Groep NV,ING,46
+88,Telefonica Moviles,TEM,45
+89,FleetBoston Financial,FBF,45
+90,DuPont,DD,45
+91,Lloyds TSB Group,LYG,45
+92,United Technologies,UTX,44
+93,Mitsubishi Tokyo Financial Group,MTF,44
+94,Credit Suisse Group,CSR,43
+95,ConocoPhillips,COP,43
+96,Banco Bilbao Vizcaya Argentaria,BBV,43
+97,Anheuser-Busch Companies,BUD,42
+98,Lowe's Cos,LOW,42
+99,Qualcomm,QCOM,42
+100,Honda Motor,HMC,42

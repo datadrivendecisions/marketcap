@@ -5,7 +5,7 @@
 
 ## 1. Overview
 
-This document defines the technical specifications for building the Market Cap Explorer, an interactive web application for comparing company market capitalizations across 2004, 2024, and 2025.
+This document defines the technical specifications for building the Market Cap Explorer, an interactive web application for comparing company market capitalizations across every year from 2001 to 2026. The year list is driven by `availableYears` in `js/data.js`; data provenance is documented in `DATA_SOURCES.md`.
 
 ---
 

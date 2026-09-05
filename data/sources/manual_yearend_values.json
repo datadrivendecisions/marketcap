@@ -1,0 +1,1276 @@
+{
+ "2007": [
+  {
+   "symbol": "TWX",
+   "name": "Time Warner",
+   "country": "United States",
+   "sector": "Media",
+   "marketcap": 59000000000,
+   "source": "10-K share count x Dec 31 close (1stock1.com)"
+  },
+  {
+   "symbol": "DELL",
+   "name": "Dell",
+   "country": "United States",
+   "sector": "Technology",
+   "marketcap": 54900000000,
+   "source": "10-Q Nov 2007 shares x Dec 31 2007 close"
+  },
+  {
+   "symbol": "MER",
+   "name": "Merrill Lynch",
+   "country": "United States",
+   "sector": "Financial Services",
+   "marketcap": 50400000000,
+   "source": "10-K FY2007 year-end shares x Dec 31 close"
+  },
+  {
+   "symbol": "KFT",
+   "name": "Kraft Foods",
+   "country": "United States",
+   "sector": "Food & Drink",
+   "marketcap": 50100000000,
+   "source": "10-K selected financial data: year-end close x shares"
+  },
+  {
+   "symbol": "BUD",
+   "name": "Anheuser-Busch",
+   "country": "United States",
+   "sector": "Food & Drink",
+   "marketcap": 37400000000,
+   "source": "10-K FY2007 Ex-13 Dec 31 close x shares"
+  },
+  {
+   "symbol": "EMC",
+   "name": "EMC",
+   "country": "United States",
+   "sector": "Technology",
+   "marketcap": 38900000000,
+   "source": "10-K FY2007 shares x Dec 31 close"
+  },
+  {
+   "symbol": "7974.T",
+   "name": "Nintendo",
+   "country": "Japan",
+   "sector": "Media",
+   "marketcap": 84844687136,
+   "source": "kabutan month-end close x 141,669,000 shares (Nintendo annual report)"
+  },
+  {
+   "symbol": "2010.SR",
+   "name": "SABIC",
+   "country": "Saudi Arabia",
+   "sector": "Other",
+   "marketcap": 132333333333,
+   "source": "Tadawul annual report market value table (SAR 3.75/USD)"
+  },
+  {
+   "symbol": "HBOS",
+   "name": "HBOS",
+   "country": "United Kingdom",
+   "sector": "Financial Services",
+   "marketcap": 54369820000,
+   "source": "Annual Report year-end share price x shares in issue"
+  },
+  {
+   "symbol": "FORB.BR",
+   "name": "Fortis",
+   "country": "Belgium",
+   "sector": "Financial Services",
+   "marketcap": 58412000000,
+   "source": "Fortis Bank financial statements: stated group market cap at year-end 2007 (rounded)"
+  },
+  {
+   "symbol": "SZE",
+   "name": "Suez",
+   "country": "France",
+   "sector": "Other",
+   "marketcap": 86011670000,
+   "source": "Document de référence 2007: December 2007 price range midpoint x shares outstanding (range EUR 57.7-60.1bn)"
+  },
+  {
+   "symbol": "XTA.L",
+   "name": "Xstrata",
+   "country": "United Kingdom",
+   "sector": "Other",
+   "marketcap": 68458350000,
+   "source": "Xstrata annual reports: year-end close x shares issued"
+  },
+  {
+   "symbol": "GOOG",
+   "name": "Google",
+   "country": "United States",
+   "sector": "Technology",
+   "marketcap": 216700000000,
+   "source": "10-K cover share counts (A+B) x unadjusted Dec 31 Class A close"
+  },
+  {
+   "symbol": "OGZPY",
+   "name": "Gazprom",
+   "country": "Russia",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 330900000000,
+   "source": "Gazprom Annual Report 2009/2010 market capitalisation series (USD, all 23.67bn shares)"
+  },
+  {
+   "symbol": "ROSN.ME",
+   "name": "Rosneft",
+   "country": "Russia",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 89800000000,
+   "source": "NAUFOR Russian stock market factbook 2007 (MICEX data)"
+  },
+  {
+   "symbol": "SBER.ME",
+   "name": "Sberbank",
+   "country": "Russia",
+   "sector": "Financial Services",
+   "marketcap": 93300000000,
+   "source": "Sberbank annual reports stated market capitalisation (ordinary + preferred, USD)"
+  },
+  {
+   "symbol": "LKOH.ME",
+   "name": "Lukoil",
+   "country": "Russia",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 74000000000,
+   "source": "Lukoil annual reports: year-end RTS share price x shares / stated capitalisation (USD)"
+  },
+  {
+   "symbol": "SNGS.ME",
+   "name": "Surgutneftegas",
+   "country": "Russia",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 47900000000,
+   "source": "NAUFOR factbook 2007 (MICEX data)"
+  },
+  {
+   "symbol": "SHEL",
+   "name": "Shell",
+   "country": "United Kingdom",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 258951150000,
+   "source": "Form 20-F share counts (A+B) x LSE year-end closes (A: 20-F/Yahoo RDSA history; B: 20-F/archived quotes)"
+  }
+ ],
+ "2013": [
+  {
+   "symbol": "TWX",
+   "name": "Time Warner",
+   "country": "United States",
+   "sector": "Media",
+   "marketcap": 62200000000,
+   "source": "10-K share count x Dec 31 close (1stock1.com)"
+  },
+  {
+   "symbol": "SAB.L",
+   "name": "SABMiller",
+   "country": "United Kingdom",
+   "sector": "Food & Drink",
+   "marketcap": 84527400000,
+   "source": "Derived from Altria 10-K fair value of its 430m-share SABMiller stake x issued shares (approx.)"
+  },
+  {
+   "symbol": "GOOG",
+   "name": "Google",
+   "country": "United States",
+   "sector": "Technology",
+   "marketcap": 376620000000,
+   "source": "10-K cover share counts (A+B) x unadjusted Dec 31 Class A close"
+  },
+  {
+   "symbol": "SHEL",
+   "name": "Shell",
+   "country": "United Kingdom",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 233196180000,
+   "source": "Form 20-F share counts (A+B) x LSE year-end closes (A: 20-F/Yahoo RDSA history; B: 20-F/archived quotes)"
+  }
+ ],
+ "2014": [
+  {
+   "symbol": "TWX",
+   "name": "Time Warner",
+   "country": "United States",
+   "sector": "Media",
+   "marketcap": 70900000000,
+   "source": "10-K share count x Dec 31 close (1stock1.com)"
+  },
+  {
+   "symbol": "EMC",
+   "name": "EMC",
+   "country": "United States",
+   "sector": "Technology",
+   "marketcap": 59100000000,
+   "source": "10-K FY2014 Dec 31 close x shares"
+  },
+  {
+   "symbol": "SAB.L",
+   "name": "SABMiller",
+   "country": "United Kingdom",
+   "sector": "Food & Drink",
+   "marketcap": 87236800000,
+   "source": "Derived from Altria 10-K fair value of its 430m-share SABMiller stake x issued shares (approx.)"
+  },
+  {
+   "symbol": "SHEL",
+   "name": "Shell",
+   "country": "United Kingdom",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 215911080000,
+   "source": "Form 20-F share counts (A+B) x LSE year-end closes (A: 20-F/Yahoo RDSA history; B: 20-F/archived quotes)"
+  }
+ ],
+ "2015": [
+  {
+   "symbol": "TWX",
+   "name": "Time Warner",
+   "country": "United States",
+   "sector": "Media",
+   "marketcap": 51100000000,
+   "source": "10-K share count x Dec 31 close (1stock1.com)"
+  },
+  {
+   "symbol": "SAB.L",
+   "name": "SABMiller",
+   "country": "United Kingdom",
+   "sector": "Food & Drink",
+   "marketcap": 100272800000,
+   "source": "Derived from Altria 10-K fair value of its 430m-share SABMiller stake x issued shares (approx.)"
+  },
+  {
+   "symbol": "SHEL",
+   "name": "Shell",
+   "country": "United Kingdom",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 145395560000,
+   "source": "Form 20-F share counts (A+B) x LSE year-end closes (A: 20-F/Yahoo RDSA history; B: 20-F/archived quotes)"
+  }
+ ],
+ "2016": [
+  {
+   "symbol": "TWX",
+   "name": "Time Warner",
+   "country": "United States",
+   "sector": "Media",
+   "marketcap": 74700000000,
+   "source": "10-K share count x Dec 31 close (1stock1.com)"
+  },
+  {
+   "symbol": "RAI",
+   "name": "Reynolds American",
+   "country": "United States",
+   "sector": "Other",
+   "marketcap": 79900000000,
+   "source": "10-K FY2016 (Dec 31 close) x shares"
+  },
+  {
+   "symbol": "SHEL",
+   "name": "Shell",
+   "country": "United Kingdom",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 231318750000,
+   "source": "Form 20-F share counts (A+B) x LSE year-end closes (A: 20-F/Yahoo RDSA history; B: 20-F/archived quotes)"
+  }
+ ],
+ "2017": [
+  {
+   "symbol": "TWX",
+   "name": "Time Warner",
+   "country": "United States",
+   "sector": "Media",
+   "marketcap": 71300000000,
+   "source": "10-K share count x Dec 31 close (1stock1.com)"
+  },
+  {
+   "symbol": "FOXA",
+   "name": "Twenty-First Century Fox",
+   "country": "United States",
+   "sector": "Media",
+   "marketcap": 63600000000,
+   "source": "FOXA+FOX 10-Q Dec 2017 shares x closes"
+  },
+  {
+   "symbol": "CELG",
+   "name": "Celgene",
+   "country": "United States",
+   "sector": "Health Care",
+   "marketcap": 78500000000,
+   "source": "10-K FY2017 shares x Dec 29 close"
+  },
+  {
+   "symbol": "SHEL",
+   "name": "Shell",
+   "country": "United Kingdom",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 281403200000,
+   "source": "Form 20-F share counts (A+B) x LSE year-end closes (A: 20-F/Yahoo RDSA history; B: 20-F/archived quotes)"
+  }
+ ],
+ "2018": [
+  {
+   "symbol": "FOXA",
+   "name": "Twenty-First Century Fox",
+   "country": "United States",
+   "sector": "Media",
+   "marketcap": 89100000000,
+   "source": "FOXA+FOX 10-Q Dec 2018 shares x Dec 31 closes"
+  },
+  {
+   "symbol": "CELG",
+   "name": "Celgene",
+   "country": "United States",
+   "sector": "Health Care",
+   "marketcap": 45000000000,
+   "source": "10-K FY2018 shares x Dec 31 close"
+  },
+  {
+   "symbol": "SHEL",
+   "name": "Shell",
+   "country": "United Kingdom",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 243518040000,
+   "source": "Form 20-F share counts (A+B) x LSE year-end closes (A: 20-F/Yahoo RDSA history; B: 20-F/archived quotes)"
+  }
+ ],
+ "2008": [
+  {
+   "symbol": "KFT",
+   "name": "Kraft Foods",
+   "country": "United States",
+   "sector": "Food & Drink",
+   "marketcap": 39400000000,
+   "source": "10-K selected financial data: year-end close x shares"
+  },
+  {
+   "symbol": "7974.T",
+   "name": "Nintendo",
+   "country": "Japan",
+   "sector": "Media",
+   "marketcap": 52659984580,
+   "source": "kabutan month-end close x 141,669,000 shares (Nintendo annual report)"
+  },
+  {
+   "symbol": "2010.SR",
+   "name": "SABIC",
+   "country": "Saudi Arabia",
+   "sector": "Other",
+   "marketcap": 41200000000,
+   "source": "Tadawul annual report market value table (SAR 3.75/USD)"
+  },
+  {
+   "symbol": "GOOG",
+   "name": "Google",
+   "country": "United States",
+   "sector": "Technology",
+   "marketcap": 97000000000,
+   "source": "10-K cover share counts (A+B) x unadjusted Dec 31 Class A close"
+  },
+  {
+   "symbol": "VOW3.DE",
+   "name": "Volkswagen",
+   "country": "Germany",
+   "sector": "Automotive",
+   "marketcap": 108192387000,
+   "source": "Volkswagen AR 2008: ordinary x EUR 250.00 + preference x EUR 38.02 (last trading day closes)"
+  },
+  {
+   "symbol": "OGZPY",
+   "name": "Gazprom",
+   "country": "Russia",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 86000000000,
+   "source": "Gazprom Annual Report 2009/2010 market capitalisation series (USD, all 23.67bn shares)"
+  },
+  {
+   "symbol": "ROSN.ME",
+   "name": "Rosneft",
+   "country": "Russia",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 36000000000,
+   "source": "NAUFOR factbook 2008 (MICEX data)"
+  },
+  {
+   "symbol": "SBER.ME",
+   "name": "Sberbank",
+   "country": "Russia",
+   "sector": "Financial Services",
+   "marketcap": 17200000000,
+   "source": "Sberbank annual reports stated market capitalisation (ordinary + preferred, USD)"
+  },
+  {
+   "symbol": "LKOH.ME",
+   "name": "Lukoil",
+   "country": "Russia",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 27200000000,
+   "source": "Lukoil annual reports: year-end RTS share price x shares / stated capitalisation (USD)"
+  },
+  {
+   "symbol": "SHEL",
+   "name": "Shell",
+   "country": "United Kingdom",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 158469960000,
+   "source": "Form 20-F share counts (A+B) x LSE year-end closes (A: 20-F/Yahoo RDSA history; B: 20-F/archived quotes)"
+  }
+ ],
+ "2009": [
+  {
+   "symbol": "KFT",
+   "name": "Kraft Foods",
+   "country": "United States",
+   "sector": "Food & Drink",
+   "marketcap": 40200000000,
+   "source": "10-K selected financial data: year-end close x shares"
+  },
+  {
+   "symbol": "2010.SR",
+   "name": "SABIC",
+   "country": "Saudi Arabia",
+   "sector": "Other",
+   "marketcap": 66000000000,
+   "source": "Tadawul annual report market value table (SAR 3.75/USD)"
+  },
+  {
+   "symbol": "XTA.L",
+   "name": "Xstrata",
+   "country": "United Kingdom",
+   "sector": "Other",
+   "marketcap": 53189430000,
+   "source": "Xstrata annual reports: year-end close x shares issued"
+  },
+  {
+   "symbol": "GOOG",
+   "name": "Google",
+   "country": "United States",
+   "sector": "Technology",
+   "marketcap": 197140000000,
+   "source": "10-K cover share counts (A+B) x unadjusted Dec 31 Class A close"
+  },
+  {
+   "symbol": "OGZPY",
+   "name": "Gazprom",
+   "country": "Russia",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 144500000000,
+   "source": "Gazprom Annual Report 2009/2010 market capitalisation series (USD, all 23.67bn shares)"
+  },
+  {
+   "symbol": "ROSN.ME",
+   "name": "Rosneft",
+   "country": "Russia",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 88300000000,
+   "source": "NAUFOR factbook 2009 (MICEX data); own filing RUB 2,474.67bn"
+  },
+  {
+   "symbol": "SBER.ME",
+   "name": "Sberbank",
+   "country": "Russia",
+   "sector": "Financial Services",
+   "marketcap": 61800000000,
+   "source": "Sberbank annual reports stated market capitalisation (ordinary + preferred, USD)"
+  },
+  {
+   "symbol": "LKOH.ME",
+   "name": "Lukoil",
+   "country": "Russia",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 47800000000,
+   "source": "Lukoil annual reports: year-end RTS share price x shares / stated capitalisation (USD)"
+  },
+  {
+   "symbol": "SHEL",
+   "name": "Shell",
+   "country": "United Kingdom",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 183333780000,
+   "source": "Form 20-F share counts (A+B) x LSE year-end closes (A: 20-F/Yahoo RDSA history; B: 20-F/archived quotes)"
+  },
+  {
+   "symbol": "BHP",
+   "name": "BHP Billiton",
+   "country": "Australia",
+   "sector": "Other",
+   "marketcap": 201175866000,
+   "source": "Ltd 3,358.3m x A$43.12 + Plc 2,206.1m x 1,995p (31 Dec 2009 closes, BHP price history; shares per FY2010 20-F)"
+  }
+ ],
+ "2010": [
+  {
+   "symbol": "KFT",
+   "name": "Kraft Foods",
+   "country": "United States",
+   "sector": "Food & Drink",
+   "marketcap": 55100000000,
+   "source": "10-K selected financial data: year-end close x shares"
+  },
+  {
+   "symbol": "2010.SR",
+   "name": "SABIC",
+   "country": "Saudi Arabia",
+   "sector": "Other",
+   "marketcap": 83800000000,
+   "source": "Tadawul annual report market value table (SAR 3.75/USD)"
+  },
+  {
+   "symbol": "XTA.L",
+   "name": "Xstrata",
+   "country": "United Kingdom",
+   "sector": "Other",
+   "marketcap": 68648320000,
+   "source": "Xstrata annual reports: year-end close x shares issued"
+  },
+  {
+   "symbol": "BNP.PA",
+   "name": "BNP Paribas",
+   "country": "France",
+   "sector": "Financial Services",
+   "marketcap": 75765990000,
+   "source": "Document de référence 2010 stated capitalisation boursière"
+  },
+  {
+   "symbol": "ABEV",
+   "name": "Ambev",
+   "country": "Brazil",
+   "sector": "Food & Drink",
+   "marketcap": 86600000000,
+   "source": "Economatica year-end ranking (USD), cross-checked with 20-F share counts x closes"
+  },
+  {
+   "symbol": "GOOG",
+   "name": "Google",
+   "country": "United States",
+   "sector": "Technology",
+   "marketcap": 190970000000,
+   "source": "10-K cover share counts (A+B) x unadjusted Dec 31 Class A close"
+  },
+  {
+   "symbol": "SBER.ME",
+   "name": "Sberbank",
+   "country": "Russia",
+   "sector": "Financial Services",
+   "marketcap": 76100000000,
+   "source": "Sberbank annual reports stated market capitalisation (ordinary + preferred, USD)"
+  },
+  {
+   "symbol": "SHEL",
+   "name": "Shell",
+   "country": "United Kingdom",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 201635200000,
+   "source": "Form 20-F share counts (A+B) x LSE year-end closes (A: 20-F/Yahoo RDSA history; B: 20-F/archived quotes)"
+  }
+ ],
+ "2011": [
+  {
+   "symbol": "KFT",
+   "name": "Kraft Foods",
+   "country": "United States",
+   "sector": "Food & Drink",
+   "marketcap": 66100000000,
+   "source": "10-K selected financial data: year-end close x shares"
+  },
+  {
+   "symbol": "2010.SR",
+   "name": "SABIC",
+   "country": "Saudi Arabia",
+   "sector": "Other",
+   "marketcap": 77000000000,
+   "source": "Tadawul annual report market value table (SAR 3.75/USD)"
+  },
+  {
+   "symbol": "ABEV",
+   "name": "Ambev",
+   "country": "Brazil",
+   "sector": "Food & Drink",
+   "marketcap": 100660331776,
+   "source": "Economatica year-end ranking (BRL), cross-checked with 20-F share counts x closes"
+  },
+  {
+   "symbol": "GOOG",
+   "name": "Google",
+   "country": "United States",
+   "sector": "Technology",
+   "marketcap": 210010000000,
+   "source": "10-K cover share counts (A+B) x unadjusted Dec 31 Class A close"
+  },
+  {
+   "symbol": "SBER.ME",
+   "name": "Sberbank",
+   "country": "Russia",
+   "sector": "Financial Services",
+   "marketcap": 54800000000,
+   "source": "Sberbank annual reports stated market capitalisation (ordinary + preferred, USD)"
+  },
+  {
+   "symbol": "SHEL",
+   "name": "Shell",
+   "country": "United Kingdom",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 232588890000,
+   "source": "Form 20-F share counts (A+B) x LSE year-end closes (A: 20-F/Yahoo RDSA history; B: 20-F/archived quotes)"
+  }
+ ],
+ "2002": [
+  {
+   "symbol": "601857.SS",
+   "name": "PetroChina",
+   "country": "China",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 34941273016,
+   "source": "HKEX Fact Book (H-share close) x total shares, FT/Bloomberg convention"
+  },
+  {
+   "symbol": "RBS",
+   "name": "Royal Bank of Scotland",
+   "country": "United Kingdom",
+   "sector": "Financial Services",
+   "marketcap": 69530400000,
+   "source": "Form 20-F stated market capitalisation at period end"
+  },
+  {
+   "symbol": "HBOS",
+   "name": "HBOS",
+   "country": "United Kingdom",
+   "sector": "Financial Services",
+   "marketcap": 39915600000,
+   "source": "Annual Report year-end share price x shares in issue"
+  },
+  {
+   "symbol": "ALIZY",
+   "name": "Allianz",
+   "country": "Germany",
+   "sector": "Financial Services",
+   "marketcap": 23067000000,
+   "source": "Allianz annual report stated market capitalisation"
+  },
+  {
+   "symbol": "005930.KS",
+   "name": "Samsung",
+   "country": "South Korea",
+   "sector": "Semiconductors",
+   "marketcap": 40748545899,
+   "source": "Common shares issued (DART/annual report) x year-end close (KRW trillions)"
+  },
+  {
+   "symbol": "UBS",
+   "name": "UBS",
+   "country": "Switzerland",
+   "sector": "Financial Services",
+   "marketcap": 57433673101,
+   "source": "UBS Handbook stated year-end market capitalisation (CHF)"
+  },
+  {
+   "symbol": "ROG.SW",
+   "name": "Roche",
+   "country": "Switzerland",
+   "sector": "Health Care",
+   "marketcap": 67572471626,
+   "source": "Roche Finance Report five-year table, stated year-end market capitalisation (CHF)"
+  },
+  {
+   "symbol": "BNP.PA",
+   "name": "BNP Paribas",
+   "country": "France",
+   "sector": "Financial Services",
+   "marketcap": 36445860000,
+   "source": "Document de référence 2002 stated capitalisation boursière"
+  },
+  {
+   "symbol": "4502.T",
+   "name": "Takeda",
+   "country": "Japan",
+   "sector": "Health Care",
+   "marketcap": 37143578947,
+   "source": "889,272,395 shares (Takeda databook) x TSE year-end close"
+  },
+  {
+   "symbol": "OR.PA",
+   "name": "L'Oréal",
+   "country": "France",
+   "sector": "Luxury Goods",
+   "marketcap": 51376500000,
+   "source": "L'Oréal Annual Report 2002 stated market capitalisation"
+  },
+  {
+   "symbol": "NESN.SW",
+   "name": "Nestlé",
+   "country": "Switzerland",
+   "sector": "Food & Drink",
+   "marketcap": 81954745897,
+   "source": "Nestlé Management Report 2002 stated market capitalisation end December"
+  },
+  {
+   "symbol": "CAJ",
+   "name": "Canon",
+   "country": "Japan",
+   "sector": "Technology",
+   "marketcap": 33092210526,
+   "source": "Form 20-F shares outstanding x TSE year-end close (split-adjusted Yahoo history)"
+  },
+  {
+   "symbol": "CVX",
+   "name": "ChevronTexaco",
+   "country": "United States",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 71010000000,
+   "source": "10-K shares outstanding at 31 Dec 2002 x $66.48 close"
+  }
+ ],
+ "2003": [
+  {
+   "symbol": "601857.SS",
+   "name": "PetroChina",
+   "country": "China",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 100772797527,
+   "source": "HKEX Fact Book (H-share close) x total shares, FT/Bloomberg convention"
+  },
+  {
+   "symbol": "RBS",
+   "name": "Royal Bank of Scotland",
+   "country": "United Kingdom",
+   "sector": "Financial Services",
+   "marketcap": 87068960000,
+   "source": "Form 20-F stated market capitalisation at period end"
+  },
+  {
+   "symbol": "HBOS",
+   "name": "HBOS",
+   "country": "United Kingdom",
+   "sector": "Financial Services",
+   "marketcap": 49779180000,
+   "source": "Annual Report year-end share price x shares in issue"
+  },
+  {
+   "symbol": "ALIZY",
+   "name": "Allianz",
+   "country": "Germany",
+   "sector": "Financial Services",
+   "marketcap": 46230990000,
+   "source": "Allianz annual report stated market capitalisation"
+  },
+  {
+   "symbol": "ENEL",
+   "name": "ENEL",
+   "country": "Italy",
+   "sector": "Other",
+   "marketcap": 40814280000,
+   "source": "Enel Annual Report 2003 stated capitalisation (December average price basis)"
+  },
+  {
+   "symbol": "005930.KS",
+   "name": "Samsung",
+   "country": "South Korea",
+   "sector": "Semiconductors",
+   "marketcap": 58699664430,
+   "source": "Common shares issued (DART/annual report) x year-end close (KRW trillions)"
+  },
+  {
+   "symbol": "UBS",
+   "name": "UBS",
+   "country": "Switzerland",
+   "sector": "Financial Services",
+   "marketcap": 77060581583,
+   "source": "UBS Handbook stated year-end market capitalisation (CHF)"
+  },
+  {
+   "symbol": "ROG.SW",
+   "name": "Roche",
+   "country": "Switzerland",
+   "sector": "Health Care",
+   "marketcap": 90638126010,
+   "source": "Roche Finance Report five-year table, stated year-end market capitalisation (CHF)"
+  },
+  {
+   "symbol": "4502.T",
+   "name": "Takeda",
+   "country": "Japan",
+   "sector": "Health Care",
+   "marketcap": 35278633436,
+   "source": "889,272,395 shares (Takeda databook) x TSE year-end close"
+  },
+  {
+   "symbol": "UL",
+   "name": "Unilever",
+   "country": "Netherlands",
+   "sector": "Household & Personal Products",
+   "marketcap": 64370670000,
+   "source": "Unilever Form 20-F stated combined NV+PLC market capitalisation at 31 December"
+  },
+  {
+   "symbol": "CAJ",
+   "name": "Canon",
+   "country": "Japan",
+   "sector": "Technology",
+   "marketcap": 41051992906,
+   "source": "Form 20-F shares outstanding x TSE year-end close (split-adjusted Yahoo history)"
+  }
+ ],
+ "2005": [
+  {
+   "symbol": "601939.SS",
+   "name": "China Construction Bank",
+   "country": "China",
+   "sector": "Financial Services",
+   "marketcap": 78250551378,
+   "source": "HKEX Fact Book (H-share close) x total shares, FT/Bloomberg convention"
+  },
+  {
+   "symbol": "2628.HK",
+   "name": "China Life Insurance",
+   "country": "China",
+   "sector": "Financial Services",
+   "marketcap": 23641546180,
+   "source": "HKEX Fact Book (H-share close) x total shares, FT/Bloomberg convention; shares per Form 20-F"
+  },
+  {
+   "symbol": "MFG",
+   "name": "Mizuho Financial Group",
+   "country": "Japan",
+   "sector": "Financial Services",
+   "marketcap": 95317271802,
+   "source": "kabutan year-end close (split-adjusted back) x common shares per Form 20-F"
+  },
+  {
+   "symbol": "RBS",
+   "name": "Royal Bank of Scotland",
+   "country": "United Kingdom",
+   "sector": "Financial Services",
+   "marketcap": 96424680000,
+   "source": "Form 20-F stated market capitalisation at period end"
+  },
+  {
+   "symbol": "HBOS",
+   "name": "HBOS",
+   "country": "United Kingdom",
+   "sector": "Financial Services",
+   "marketcap": 65486280000,
+   "source": "Annual Report year-end share price x shares in issue"
+  },
+  {
+   "symbol": "UCG.MI",
+   "name": "UniCredit",
+   "country": "Italy",
+   "sector": "Financial Services",
+   "marketcap": 71052000000,
+   "source": "UniCredit Consolidated Report 2005 (price x shares net of own shares)"
+  },
+  {
+   "symbol": "005930.KS",
+   "name": "Samsung",
+   "country": "South Korea",
+   "sector": "Semiconductors",
+   "marketcap": 96108910891,
+   "source": "Common shares issued (DART/annual report) x year-end close (KRW trillions)"
+  },
+  {
+   "symbol": "UBS",
+   "name": "UBS",
+   "country": "Switzerland",
+   "sector": "Financial Services",
+   "marketcap": 100356708245,
+   "source": "UBS Handbook stated year-end market capitalisation (CHF)"
+  },
+  {
+   "symbol": "ROG.SW",
+   "name": "Roche",
+   "country": "Switzerland",
+   "sector": "Health Care",
+   "marketcap": 129965774262,
+   "source": "Roche Finance Report five-year table, stated year-end market capitalisation (CHF)"
+  },
+  {
+   "symbol": "GOOG",
+   "name": "Google",
+   "country": "United States",
+   "sector": "Technology",
+   "marketcap": 123310000000,
+   "source": "10-K cover share counts (A+B) x unadjusted Dec 31 Class A close"
+  },
+  {
+   "symbol": "4502.T",
+   "name": "Takeda",
+   "country": "Japan",
+   "sector": "Health Care",
+   "marketcap": 48130302002,
+   "source": "889,272,395 shares (Takeda databook) x TSE year-end close"
+  },
+  {
+   "symbol": "OGZPY",
+   "name": "Gazprom",
+   "country": "Russia",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 160300000000,
+   "source": "Gazprom Annual Report 2009/2010 market capitalisation series (USD, all 23.67bn shares)"
+  },
+  {
+   "symbol": "LKOH.ME",
+   "name": "Lukoil",
+   "country": "Russia",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 50500000000,
+   "source": "Lukoil annual reports: year-end RTS share price x shares / stated capitalisation (USD)"
+  },
+  {
+   "symbol": "SHEL",
+   "name": "Shell",
+   "country": "United Kingdom",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 202646520000,
+   "source": "Form 20-F share counts (A+B) x LSE year-end closes (A: 20-F/Yahoo RDSA history; B: 20-F/archived quotes)"
+  },
+  {
+   "symbol": "UL",
+   "name": "Unilever",
+   "country": "Netherlands",
+   "sector": "Household & Personal Products",
+   "marketcap": 68091500000,
+   "source": "Unilever Form 20-F stated combined NV+PLC market capitalisation at 31 December"
+  }
+ ],
+ "2006": [
+  {
+   "symbol": "601939.SS",
+   "name": "China Construction Bank",
+   "country": "China",
+   "sector": "Financial Services",
+   "marketcap": 143009605123,
+   "source": "HKEX Fact Book (H-share close) x total shares, FT/Bloomberg convention"
+  },
+  {
+   "symbol": "2628.HK",
+   "name": "China Life Insurance",
+   "country": "China",
+   "sector": "Financial Services",
+   "marketcap": 91370819457,
+   "source": "HKEX Fact Book (H-share close) x total shares, FT/Bloomberg convention; shares per Form 20-F"
+  },
+  {
+   "symbol": "2318.HK",
+   "name": "Ping An Insurance",
+   "country": "China",
+   "sector": "Financial Services",
+   "marketcap": 34292988389,
+   "source": "HKEX Fact Book (H-share close) x total shares, FT/Bloomberg convention"
+  },
+  {
+   "symbol": "601088.SS",
+   "name": "China Shenhua Energy",
+   "country": "China",
+   "sector": "Other",
+   "marketcap": 43538079747,
+   "source": "HKEX Fact Book (H-share close) x total shares, FT/Bloomberg convention"
+  },
+  {
+   "symbol": "2010.SR",
+   "name": "SABIC",
+   "country": "Saudi Arabia",
+   "sector": "Other",
+   "marketcap": 70166666667,
+   "source": "Tadawul annual report market value table (SAR 3.75/USD)"
+  },
+  {
+   "symbol": "RBS",
+   "name": "Royal Bank of Scotland",
+   "country": "United Kingdom",
+   "sector": "Financial Services",
+   "marketcap": 123000080000,
+   "source": "Form 20-F stated market capitalisation at period end"
+  },
+  {
+   "symbol": "HBOS",
+   "name": "HBOS",
+   "country": "United Kingdom",
+   "sector": "Financial Services",
+   "marketcap": 83436360000,
+   "source": "Annual Report year-end share price x shares in issue"
+  },
+  {
+   "symbol": "ALIZY",
+   "name": "Allianz",
+   "country": "Germany",
+   "sector": "Financial Services",
+   "marketcap": 88287930000,
+   "source": "Allianz annual report stated market capitalisation"
+  },
+  {
+   "symbol": "FORB.BR",
+   "name": "Fortis",
+   "country": "Belgium",
+   "sector": "Financial Services",
+   "marketcap": 56747100000,
+   "source": "Fortis Bank financial statements: stated group market cap at year-end 2006 (rounded)"
+  },
+  {
+   "symbol": "005930.KS",
+   "name": "Samsung",
+   "country": "South Korea",
+   "sector": "Semiconductors",
+   "marketcap": 97086021505,
+   "source": "Common shares issued (DART/annual report) x year-end close (KRW trillions)"
+  },
+  {
+   "symbol": "GOOG",
+   "name": "Google",
+   "country": "United States",
+   "sector": "Technology",
+   "marketcap": 143190000000,
+   "source": "10-K cover share counts (A+B) x unadjusted Dec 31 Class A close"
+  },
+  {
+   "symbol": "OGZPY",
+   "name": "Gazprom",
+   "country": "Russia",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 272000000000,
+   "source": "Gazprom Annual Report 2009/2010 market capitalisation series (USD, all 23.67bn shares)"
+  },
+  {
+   "symbol": "ROSN.ME",
+   "name": "Rosneft",
+   "country": "Russia",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 94800000000,
+   "source": "RIA Novosti 30 Jun 2007 citing end-2006 capitalisation (medium confidence)"
+  },
+  {
+   "symbol": "SBER.ME",
+   "name": "Sberbank",
+   "country": "Russia",
+   "sector": "Financial Services",
+   "marketcap": 67700000000,
+   "source": "Sberbank annual reports stated market capitalisation (ordinary + preferred, USD)"
+  },
+  {
+   "symbol": "LKOH.ME",
+   "name": "Lukoil",
+   "country": "Russia",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 74800000000,
+   "source": "Lukoil annual reports: year-end RTS share price x shares / stated capitalisation (USD)"
+  },
+  {
+   "symbol": "SNGS.ME",
+   "name": "Surgutneftegas",
+   "country": "Russia",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 60200000000,
+   "source": "Surgutneftegas quarterly report: RUB 1,585.82bn all shares at FCSM price, CBR rate 26.3311"
+  },
+  {
+   "symbol": "SHEL",
+   "name": "Shell",
+   "country": "United Kingdom",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 220538360000,
+   "source": "Form 20-F share counts (A+B) x LSE year-end closes (A: 20-F/Yahoo RDSA history; B: 20-F/archived quotes)"
+  },
+  {
+   "symbol": "UL",
+   "name": "Unilever",
+   "country": "Netherlands",
+   "sector": "Household & Personal Products",
+   "marketcap": 83668980000,
+   "source": "Unilever Form 20-F stated combined NV+PLC market capitalisation at 31 December"
+  }
+ ],
+ "2004": [
+  {
+   "symbol": "2628.HK",
+   "name": "China Life Insurance",
+   "country": "China",
+   "sector": "Financial Services",
+   "marketcap": 17909756443,
+   "source": "HKEX Fact Book (H-share close) x total shares, FT/Bloomberg convention; shares per Form 20-F"
+  },
+  {
+   "symbol": "MFG",
+   "name": "Mizuho Financial Group",
+   "country": "Japan",
+   "sector": "Financial Services",
+   "marketcap": 60323334632,
+   "source": "kabutan year-end close (split-adjusted back) x common shares per Form 20-F"
+  },
+  {
+   "symbol": "RBS",
+   "name": "Royal Bank of Scotland",
+   "country": "United Kingdom",
+   "sector": "Financial Services",
+   "marketcap": 106529600000,
+   "source": "Form 20-F stated market capitalisation at period end"
+  },
+  {
+   "symbol": "HBOS",
+   "name": "HBOS",
+   "country": "United Kingdom",
+   "sector": "Financial Services",
+   "marketcap": 63802800000,
+   "source": "Annual Report year-end share price x shares in issue"
+  },
+  {
+   "symbol": "ALIZY",
+   "name": "Allianz",
+   "country": "Germany",
+   "sector": "Financial Services",
+   "marketcap": 48601420000,
+   "source": "Allianz annual report stated market capitalisation"
+  },
+  {
+   "symbol": "005930.KS",
+   "name": "Samsung",
+   "country": "South Korea",
+   "sector": "Semiconductors",
+   "marketcap": 64109747850,
+   "source": "Common shares issued (DART/annual report) x year-end close (KRW trillions)"
+  },
+  {
+   "symbol": "UBS",
+   "name": "UBS",
+   "country": "Switzerland",
+   "sector": "Financial Services",
+   "marketcap": 90814931651,
+   "source": "UBS Handbook stated year-end market capitalisation (CHF)"
+  },
+  {
+   "symbol": "ROG.SW",
+   "name": "Roche",
+   "country": "Switzerland",
+   "sector": "Health Care",
+   "marketcap": 99189449702,
+   "source": "Roche Finance Report five-year table, stated year-end market capitalisation (CHF)"
+  },
+  {
+   "symbol": "GOOG",
+   "name": "Google",
+   "country": "United States",
+   "sector": "Technology",
+   "marketcap": 52930000000,
+   "source": "10-K cover share counts (A+B) x unadjusted Dec 31 Class A close"
+  },
+  {
+   "symbol": "4502.T",
+   "name": "Takeda",
+   "country": "Japan",
+   "sector": "Health Care",
+   "marketcap": 44688352162,
+   "source": "889,272,395 shares (Takeda databook) x TSE year-end close"
+  },
+  {
+   "symbol": "OGZPY",
+   "name": "Gazprom",
+   "country": "Russia",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 66300000000,
+   "source": "Gazprom Annual Report 2009/2010 market capitalisation series (USD, all 23.67bn shares)"
+  },
+  {
+   "symbol": "LKOH.ME",
+   "name": "Lukoil",
+   "country": "Russia",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 25800000000,
+   "source": "Lukoil annual reports: year-end RTS share price x shares / stated capitalisation (USD)"
+  },
+  {
+   "symbol": "UL",
+   "name": "Unilever",
+   "country": "Netherlands",
+   "sector": "Household & Personal Products",
+   "marketcap": 66742340000,
+   "source": "Unilever Form 20-F stated combined NV+PLC market capitalisation at 31 December"
+  }
+ ],
+ "2012": [
+  {
+   "symbol": "SAB.L",
+   "name": "SABMiller",
+   "country": "United Kingdom",
+   "sector": "Food & Drink",
+   "marketcap": 74805200000,
+   "source": "Derived from Altria 10-K fair value of its 430m-share SABMiller stake x issued shares (approx.)"
+  },
+  {
+   "symbol": "ROG.SW",
+   "name": "Roche",
+   "country": "Switzerland",
+   "sector": "Health Care",
+   "marketcap": 171034407428,
+   "source": "Roche Finance Report five-year table, stated year-end market capitalisation (CHF)"
+  },
+  {
+   "symbol": "ABEV",
+   "name": "Ambev",
+   "country": "Brazil",
+   "sector": "Food & Drink",
+   "marketcap": 129029107248,
+   "source": "Economatica year-end ranking (BRL), cross-checked with 20-F share counts x closes"
+  },
+  {
+   "symbol": "GOOG",
+   "name": "Google",
+   "country": "United States",
+   "sector": "Technology",
+   "marketcap": 233200000000,
+   "source": "10-K cover share counts (A+B) x unadjusted Dec 31 Class A close"
+  },
+  {
+   "symbol": "SHEL",
+   "name": "Shell",
+   "country": "United Kingdom",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 222789400000,
+   "source": "Form 20-F share counts (A+B) x LSE year-end closes (A: 20-F/Yahoo RDSA history; B: 20-F/archived quotes)"
+  }
+ ],
+ "2021": [
+  {
+   "symbol": "IHC.AE",
+   "name": "International Holding Company",
+   "country": "United Arab Emirates",
+   "sector": "Conglomerate",
+   "marketcap": 75387338325,
+   "source": "IHC Annual Report 2021 share count x December 2021 close (AED 3.6725/USD)"
+  },
+  {
+   "symbol": "SHEL",
+   "name": "Shell",
+   "country": "United Kingdom",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 168345000000,
+   "source": "Form 20-F share counts (A+B) x LSE year-end closes (A: 20-F/Yahoo RDSA history; B: 20-F/archived quotes)"
+  }
+ ],
+ "2022": [
+  {
+   "symbol": "IHC.AE",
+   "name": "International Holding Company",
+   "country": "United Arab Emirates",
+   "sector": "Conglomerate",
+   "marketcap": 244887678693,
+   "source": "IHC Annual Report 2022 / ADX release: AED 899bn at 31 Dec 2022"
+  }
+ ],
+ "2019": [
+  {
+   "symbol": "SHEL",
+   "name": "Shell",
+   "country": "United Kingdom",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 233932470000,
+   "source": "Form 20-F share counts (A+B) x LSE year-end closes (A: 20-F/Yahoo RDSA history; B: 20-F/archived quotes)"
+  }
+ ],
+ "2020": [
+  {
+   "symbol": "SHEL",
+   "name": "Shell",
+   "country": "United Kingdom",
+   "sector": "Oil & Gas Operations",
+   "marketcap": 136483380000,
+   "source": "Form 20-F share counts (A+B) x LSE year-end closes (A: 20-F/Yahoo RDSA history; B: 20-F/archived quotes)"
+  }
+ ]
+}

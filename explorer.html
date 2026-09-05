@@ -18,17 +18,14 @@
         <p class="text-muted mb-0 small">100 Largest Companies by Market Capitalization</p>
       </div>
       <div class="d-flex align-items-center gap-3">
-        <div class="year-selector btn-group" role="group" aria-label="Year selector">
-          <button type="button" class="btn btn-outline-primary" data-year="2004">2004</button>
-          <button type="button" class="btn btn-outline-primary active" data-year="2024">2024</button>
-          <button type="button" class="btn btn-outline-primary" data-year="2025">2025</button>
+        <div class="year-selector d-flex align-items-center gap-1" role="group" aria-label="Year selector">
+          <button type="button" class="btn btn-outline-primary" id="year-prev" title="Previous year (←)" aria-label="Previous year">&lsaquo;</button>
+          <select id="year-select" class="form-select year-select" aria-label="Year"></select>
+          <button type="button" class="btn btn-outline-primary" id="year-next" title="Next year (→)" aria-label="Next year">&rsaquo;</button>
         </div>
         <div class="compare-selector">
-          <select id="compare-select" class="form-select form-select-sm">
+          <select id="compare-select" class="form-select form-select-sm" aria-label="Compare with year">
             <option value="">Compare with...</option>
-            <option value="2004">vs 2004</option>
-            <option value="2024">vs 2024</option>
-            <option value="2025">vs 2025</option>
           </select>
         </div>
       </div>
@@ -112,11 +109,11 @@
           <div id="chart-compare" class="chart-area d-none">
             <div class="row">
               <div class="col-6">
-                <div class="chart-label" id="chart-left-label">2024</div>
+                <div class="chart-label" id="chart-left-label">2026</div>
                 <div id="chart-left"></div>
               </div>
               <div class="col-6">
-                <div class="chart-label" id="chart-right-label">2025</div>
+                <div class="chart-label" id="chart-right-label">2001</div>
                 <div id="chart-right"></div>
               </div>
             </div>
@@ -183,7 +180,10 @@
   <!-- Footer -->
   <footer class="container-fluid py-3 mt-4 border-top">
     <p class="text-center text-muted small mb-0">
-      Data source: <a href="https://companiesmarketcap.com/" target="_blank">companiesmarketcap.com</a>
+      Data sources: <a href="https://companiesmarketcap.com/" target="_blank">companiesmarketcap.com</a> (year-end histories for 2002&ndash;2023; in-year snapshots for 2004, 2024, 2025 and 2026, the last taken 4 Sep 2026)
+      &middot; <a href="https://fortboise.org/top100/" target="_blank">fortboise.org weekly Top 100 lists</a> (2001&ndash;2006)
+      &middot; company annual reports, SEC filings and exchange statistics for hand-researched values
+      &middot; <a href="https://github.com/datadrivendecisions/marketcap/blob/main/DATA_SOURCES.md" target="_blank">full source notes</a>
     </p>
   </footer>
 
